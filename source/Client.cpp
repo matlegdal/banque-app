@@ -170,9 +170,10 @@ bool Client::operator<(const Client &p_client) const
  */
 Client::~Client()
 {
-	for (unsigned int i = 0; i < m_vComptes.size(); ++i)
+	std::vector<Compte*>::iterator it;
+	for (it = m_vComptes.begin(); it < m_vComptes.end(); it++)
 	{
-		delete m_vComptes[i];
+		delete (*it);
 	}
 }
 
