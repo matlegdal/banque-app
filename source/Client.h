@@ -2,8 +2,8 @@
  * @file Client.h
  * @brief Interface de la classe Client pour le tp de GIF-1003
  * @author Mathieu Leger-Dalcourt
- * @date 12 avril 2018
- * @version 2.0
+ * @date 16 avril 2018
+ * @version 2.1
  */
 
 #ifndef CLIENT_H_
