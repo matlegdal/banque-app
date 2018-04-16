@@ -183,9 +183,10 @@ Client::~Client()
 bool Client::compteEstDejaPresent(int p_noCompte) const
 {
 	bool estPresent = false;
-	for (unsigned int i = 0; i < m_vComptes.size(); ++i)
+	std::vector<Compte*>::const_iterator it;
+	for (it = m_vComptes.begin(); it < m_vComptes.end(); it++)
 	{
-		if (p_noCompte == m_vComptes[i]->reqNoCompte())
+		if (p_noCompte == (*it)->reqNoCompte())
 		{
 			estPresent = true;
 			break;
