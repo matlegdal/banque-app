@@ -79,6 +79,7 @@ public:
         doubleSpinBox_tauxInteret->setFont(font2);
         doubleSpinBox_tauxInteret->setMinimum(-100);
         doubleSpinBox_tauxInteret->setMaximum(100);
+        doubleSpinBox_tauxInteret->setValue(2);
         label_solde = new QLabel(AjoutChequeInterfaceClass);
         label_solde->setObjectName(QString::fromUtf8("label_solde"));
         label_solde->setGeometry(QRect(40, 150, 141, 31));
@@ -90,6 +91,7 @@ public:
         doubleSpinBox_solde->setMinimum(-1e+06);
         doubleSpinBox_solde->setMaximum(1e+06);
         doubleSpinBox_solde->setSingleStep(100);
+        doubleSpinBox_solde->setValue(-100);
         label_nombreTransactions = new QLabel(AjoutChequeInterfaceClass);
         label_nombreTransactions->setObjectName(QString::fromUtf8("label_nombreTransactions"));
         label_nombreTransactions->setGeometry(QRect(40, 190, 141, 31));
@@ -100,7 +102,7 @@ public:
         spinBox_nombreTransactions->setFont(font2);
         spinBox_nombreTransactions->setMinimum(0);
         spinBox_nombreTransactions->setMaximum(40);
-        spinBox_nombreTransactions->setValue(0);
+        spinBox_nombreTransactions->setValue(5);
         label_tauxInteretMinimum = new QLabel(AjoutChequeInterfaceClass);
         label_tauxInteretMinimum->setObjectName(QString::fromUtf8("label_tauxInteretMinimum"));
         label_tauxInteretMinimum->setGeometry(QRect(40, 230, 161, 31));
@@ -111,6 +113,7 @@ public:
         doubleSpinBox_tauxInteretMinimum->setFont(font2);
         doubleSpinBox_tauxInteretMinimum->setMinimum(-100);
         doubleSpinBox_tauxInteretMinimum->setMaximum(100);
+        doubleSpinBox_tauxInteretMinimum->setValue(1);
         label_description = new QLabel(AjoutChequeInterfaceClass);
         label_description->setObjectName(QString::fromUtf8("label_description"));
         label_description->setGeometry(QRect(40, 270, 141, 31));
@@ -136,7 +139,7 @@ public:
         label_solde->setText(QApplication::translate("AjoutChequeInterfaceClass", "Solde ($)", 0, QApplication::UnicodeUTF8));
         label_nombreTransactions->setText(QApplication::translate("AjoutChequeInterfaceClass", "Nombre de transactions", 0, QApplication::UnicodeUTF8));
         label_tauxInteretMinimum->setText(QApplication::translate("AjoutChequeInterfaceClass", "Taux d'int\303\251r\303\252t minimum (%)", 0, QApplication::UnicodeUTF8));
-        label_description->setText(QApplication::translate("AjoutChequeInterfaceClass", "Description", 0, QApplication::UnicodeUTF8));
+        label_description->setText(QApplication::translate("AjoutChequeInterfaceClass", "Description (facultatif)", 0, QApplication::UnicodeUTF8));
         pushButton_ajoutCheque->setText(QApplication::translate("AjoutChequeInterfaceClass", "Enregistrer le compte", 0, QApplication::UnicodeUTF8));
     } // retranslateUi
 

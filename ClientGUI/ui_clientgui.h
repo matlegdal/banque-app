@@ -34,8 +34,9 @@ public:
     QAction *actionCheque;
     QAction *actionEpargne;
     QWidget *centralwidget;
-    QTableWidget *tableWidget;
-    QTextBrowser *textBrowser;
+    QTableWidget *tableWidget_comptes;
+    QTextBrowser *textBrowser_infoComptes;
+    QTextBrowser *textBrowser_infoClient;
     QMenuBar *menubar;
     QMenu *menuFichier;
     QMenu *menuActions;
@@ -61,18 +62,21 @@ public:
         actionEpargne->setObjectName(QString::fromUtf8("actionEpargne"));
         centralwidget = new QWidget(ClientGUIClass);
         centralwidget->setObjectName(QString::fromUtf8("centralwidget"));
-        tableWidget = new QTableWidget(centralwidget);
-        if (tableWidget->columnCount() < 2)
-            tableWidget->setColumnCount(2);
+        tableWidget_comptes = new QTableWidget(centralwidget);
+        if (tableWidget_comptes->columnCount() < 2)
+            tableWidget_comptes->setColumnCount(2);
         QTableWidgetItem *__qtablewidgetitem = new QTableWidgetItem();
-        tableWidget->setHorizontalHeaderItem(0, __qtablewidgetitem);
+        tableWidget_comptes->setHorizontalHeaderItem(0, __qtablewidgetitem);
         QTableWidgetItem *__qtablewidgetitem1 = new QTableWidgetItem();
-        tableWidget->setHorizontalHeaderItem(1, __qtablewidgetitem1);
-        tableWidget->setObjectName(QString::fromUtf8("tableWidget"));
-        tableWidget->setGeometry(QRect(10, 120, 401, 421));
-        textBrowser = new QTextBrowser(centralwidget);
-        textBrowser->setObjectName(QString::fromUtf8("textBrowser"));
-        textBrowser->setGeometry(QRect(430, 120, 361, 421));
+        tableWidget_comptes->setHorizontalHeaderItem(1, __qtablewidgetitem1);
+        tableWidget_comptes->setObjectName(QString::fromUtf8("tableWidget_comptes"));
+        tableWidget_comptes->setGeometry(QRect(10, 120, 401, 421));
+        textBrowser_infoComptes = new QTextBrowser(centralwidget);
+        textBrowser_infoComptes->setObjectName(QString::fromUtf8("textBrowser_infoComptes"));
+        textBrowser_infoComptes->setGeometry(QRect(430, 120, 361, 421));
+        textBrowser_infoClient = new QTextBrowser(centralwidget);
+        textBrowser_infoClient->setObjectName(QString::fromUtf8("textBrowser_infoClient"));
+        textBrowser_infoClient->setGeometry(QRect(10, 10, 781, 81));
         ClientGUIClass->setCentralWidget(centralwidget);
         menubar = new QMenuBar(ClientGUIClass);
         menubar->setObjectName(QString::fromUtf8("menubar"));
@@ -111,9 +115,9 @@ public:
         actionCompte_pargne->setText(QApplication::translate("ClientGUIClass", "Compte Epargne", 0, QApplication::UnicodeUTF8));
         actionCheque->setText(QApplication::translate("ClientGUIClass", "Compte Ch\303\250que", 0, QApplication::UnicodeUTF8));
         actionEpargne->setText(QApplication::translate("ClientGUIClass", "Compte \303\211pargne", 0, QApplication::UnicodeUTF8));
-        QTableWidgetItem *___qtablewidgetitem = tableWidget->horizontalHeaderItem(0);
+        QTableWidgetItem *___qtablewidgetitem = tableWidget_comptes->horizontalHeaderItem(0);
         ___qtablewidgetitem->setText(QApplication::translate("ClientGUIClass", "No Compte", 0, QApplication::UnicodeUTF8));
-        QTableWidgetItem *___qtablewidgetitem1 = tableWidget->horizontalHeaderItem(1);
+        QTableWidgetItem *___qtablewidgetitem1 = tableWidget_comptes->horizontalHeaderItem(1);
         ___qtablewidgetitem1->setText(QApplication::translate("ClientGUIClass", "Type de compte", 0, QApplication::UnicodeUTF8));
         menuFichier->setTitle(QApplication::translate("ClientGUIClass", "Fichier", 0, QApplication::UnicodeUTF8));
         menuActions->setTitle(QApplication::translate("ClientGUIClass", "Actions", 0, QApplication::UnicodeUTF8));

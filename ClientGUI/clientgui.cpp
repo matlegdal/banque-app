@@ -7,11 +7,12 @@
 #include <iostream>
 
 ClientGUI::ClientGUI(QWidget *parent)
-	: QMainWindow(parent), client(1000, "Dalcourt", "Mathieu", "819 640-1681",
-		util::Date(8, 10, 1990))
+	: QMainWindow(parent), client(1000, "Standard", "Client", "418 123-1234",
+		util::Date(1, 1, 1990))
 {
 	ui.setupUi(this);
 	QObject::connect(ui.actionCheque, SIGNAL(triggered()), this, SLOT(dialogAjoutCheque()));
+	ui.textBrowser_infoClient->setText(client.reqClientFormate().c_str());
 }
 
 ClientGUI::~ClientGUI()
@@ -24,10 +25,14 @@ void ClientGUI::dialogAjoutCheque()
 	AjoutChequeInterface saisieCheque(this);
 	if (saisieCheque.exec())
 	{
-		// todo: ajout le facultatif de la description
+		std::string description = saisieCheque.reqDescription().toStdString();
+		if (description.empty())
+		{
+			description = "Cheque";
+		}
 		ajoutCheque(saisieCheque.reqNoCompte(), saisieCheque.reqTauxInteret(),
 			saisieCheque.reqSolde(), saisieCheque.reqNombreTransactions(),
-			saisieCheque.reqTauxInteretMinimum(), saisieCheque.reqDescription().toStdString());
+			saisieCheque.reqTauxInteretMinimum(), description);
 	}
 }
 
@@ -42,6 +47,6 @@ void ClientGUI::ajoutCheque(int p_noCompte, double p_tauxInteret, double p_solde
 	} catch (banque::CompteDejaPresentException e)
 	{
 		QString message = e.what();
-		QMessageBox::information(this, "Erreur", message);
+		QMessageBox::warning(this, "Erreur le compte suivant est deja present", message);
 	}
 }
