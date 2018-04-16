@@ -228,7 +228,7 @@ TEST_F(ClientValide, ajouterCompteDejaPresent)
 {
 	banque::Cheque compteCheque(1, 1.3, 100.0, 20);
 	client.ajouterCompte(compteCheque);
-	ASSERT_THROW(client.ajouterCompte(banque::Epargne(1, 2, 100)), PreconditionException);
+	ASSERT_THROW(client.ajouterCompte(banque::Epargne(1, 2, 100)), banque::CompteDejaPresentException);
 }
 
 /**

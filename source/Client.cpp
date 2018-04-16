@@ -135,10 +135,14 @@ void Client::asgTelephone(const std::string &p_telephone)
  * @param[in] p_nouveauCompte est un objet de type Compte a ajouter au client
  * @pre le compte n'est pas deja present dans le folio du client
  * @post le compte est ajoute a la liste des comptes du client
+ * @throw CompteDejaPresentException si le compte a ajouter est deja present dans la liste des comptes du client
  */
 void Client::ajouterCompte(const Compte& p_nouveauCompte)
 {
-	PRECONDITION(!compteEstDejaPresent(p_nouveauCompte.reqNoCompte()));
+	if(compteEstDejaPresent(p_nouveauCompte.reqNoCompte()))
+	{
+		throw CompteDejaPresentException(p_nouveauCompte.reqCompteFormate());
+	}
 	m_vComptes.push_back(p_nouveauCompte.clone());
 	POSTCONDITION(compteEstDejaPresent(p_nouveauCompte.reqNoCompte()));
 	INVARIANTS();

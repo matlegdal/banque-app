@@ -11,10 +11,12 @@
 
 #include <string>
 #include <vector>
-#include "Compte.h"
+#include <sstream>
 #include "Date.h"
 #include "validationFormat.h"
-#include <sstream>
+#include "Compte.h"
+#include "CompteException.h"
+
 
 namespace banque
 {
