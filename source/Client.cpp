@@ -132,8 +132,7 @@ void Client::asgTelephone(const std::string &p_telephone)
 
 /**
  * @brief Ajoute un compte a un client
- * @param[in] p_nouveauCompte est un objet de type Compte a ajouter au client
- * @pre le compte n'est pas deja present dans le folio du client
+ * @param p_nouveauCompte est un objet de type Compte a ajouter au client
  * @post le compte est ajoute a la liste des comptes du client
  * @throw CompteDejaPresentException si le compte a ajouter est deja present dans la liste des comptes du client
  */
