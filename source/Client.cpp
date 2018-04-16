@@ -138,12 +138,43 @@ void Client::asgTelephone(const std::string &p_telephone)
  */
 void Client::ajouterCompte(const Compte& p_nouveauCompte)
 {
-	if(compteEstDejaPresent(p_nouveauCompte.reqNoCompte()))
+	if (compteEstDejaPresent(p_nouveauCompte.reqNoCompte()))
 	{
 		throw CompteDejaPresentException(p_nouveauCompte.reqCompteFormate());
 	}
 	m_vComptes.push_back(p_nouveauCompte.clone());
 	POSTCONDITION(compteEstDejaPresent(p_nouveauCompte.reqNoCompte()));
+	INVARIANTS();
+}
+
+/**
+ * @brief Supprime un compte de la liste des comptes d'un client
+ * @param p_noCompte est un entier représentant le numero du compte a supprimer
+ * @post le compte a ete supprime de la liste des comptes du client
+ * @throw CompteAbsentException si le compte a supprimer n'est pas dans la liste des comptes du client
+ */
+void Client::supprimerCompte(int p_noCompte)
+{
+	bool estPresent = false;
+	std::vector<Compte*>::iterator it;
+	for (it = m_vComptes.begin(); it < m_vComptes.end(); it++)
+	{
+		if (p_noCompte == (*it)->reqNoCompte())
+		{
+			estPresent = true;
+			delete (*it);
+			m_vComptes.erase(it);
+		}
+	}
+
+	if (!estPresent)
+	{
+		std::ostringstream os;
+		os << "Le compte No " << p_noCompte << " est absent de la liste des comptes du client.";
+		throw CompteAbsentException(os.str());
+	}
+
+	POSTCONDITION(!compteEstDejaPresent(p_noCompte));
 	INVARIANTS();
 }
 

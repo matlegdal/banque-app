@@ -41,6 +41,7 @@ public:
 
 	void asgTelephone(const std::string &p_telephone);
 	void ajouterCompte (const Compte& p_nouveauCompte);
+	void supprimerCompte(int p_noCompte);
 
 	bool operator==(const Client &p_client) const;
 	bool operator<(const Client &p_client) const;
