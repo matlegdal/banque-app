@@ -1,7 +1,7 @@
 #include "clientgui.h"
 
 ClientGUI::ClientGUI(QWidget *parent)
-    : QMainWindow(parent)
+	: QMainWindow(parent)
 {
 	ui.setupUi(this);
 }
