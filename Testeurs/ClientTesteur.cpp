@@ -191,65 +191,6 @@ TEST_F(ClientValide, asgTelephoneParametreInvalide)
 }
 
 /**
- * \brief Test de la methode void ajouterCompte (const Compte& p_nouveauCompte) pour un compte cheque
- * 		Cas valide: le compte a un no de compte unique
- */
-TEST_F(ClientValide, ajouterCompteChequeValide)
-{
-	banque::Cheque compteCheque(1, 1.3, 100.0, 20);
-	ostringstream os;
-	os << client.reqClientFormate() << "\n" << compteCheque.reqCompteFormate() << "\n";
-	string resultatAttendu = os.str();
-
-	client.ajouterCompte(compteCheque);
-	ASSERT_EQ(resultatAttendu, client.reqReleves());
-}
-
-/**
- * \brief Test de la methode void ajouterCompte (const Compte& p_nouveauCompte) pour un compte epargne
- * 		Cas valide: le compte a un no de compte unique
- */
-TEST_F(ClientValide, ajouterCompteEpargneValide)
-{
-	banque::Epargne compteEpargne(1, 2, 100);
-	ostringstream os;
-	os << client.reqClientFormate() << "\n" << compteEpargne.reqCompteFormate() << "\n";
-	string resultatAttendu = os.str();
-
-	client.ajouterCompte(compteEpargne);
-	ASSERT_EQ(resultatAttendu, client.reqReleves());
-}
-
-/**
- * \brief Test de la methode void ajouterCompte (const Compte& p_nouveauCompte) avec un compte invalide
- * 		Cas Invalide: le no de compte a ajouter est deja present dans la liste des comptes du client
- */
-TEST_F(ClientValide, ajouterCompteDejaPresent)
-{
-	banque::Cheque compteCheque(1, 1.3, 100.0, 20);
-	client.ajouterCompte(compteCheque);
-	ASSERT_THROW(client.ajouterCompte(banque::Epargne(1, 2, 100)), banque::CompteDejaPresentException);
-}
-
-/**
- * \brief Test de la methode void ajouterCompte (const Compte& p_nouveauCompte) pour l'ajout de plusieurs comptes valides
- * 		Cas valide: le compte a un no de compte unique
- */
-TEST_F(ClientValide, ajouterPlusieursComptesValides)
-{
-	banque::Cheque compteCheque(1, 1.3, 100.0, 20);
-	banque::Cheque compteSupplementaire(2, 1.3, 100.0, 20);
-	ostringstream os;
-	os << client.reqClientFormate() << "\n" << compteCheque.reqCompteFormate() << "\n"
-		<< compteSupplementaire.reqCompteFormate() << "\n";
-	string resultatAttendu = os.str();
-
-	client.ajouterCompte(compteCheque);
-	client.ajouterCompte(compteSupplementaire);
-	ASSERT_EQ(resultatAttendu, client.reqReleves());
-}
-
-/**
  * \brief Test de la surcharge de l'operateur ==
  * 		cas valides: true si 2 clients ont tous leurs attributs egaux et false si les attributs sont differents
  */
@@ -272,5 +213,130 @@ TEST_F(ClientValide, surchargeOperateurEgaliteInferieur)
 	ASSERT_TRUE(client < client2);
 	banque::Client client3(1000, "x", "Mr", "418 123-1234", util::Date(1, 3, 1990));
 	ASSERT_FALSE(client < client3);
+}
+
+/**
+ * \brief Test fixture pour les méthodes de gestion des comptes de la classe Client.
+ */
+class ClientGestionDesComptes: public ::testing::Test
+{
+public:
+	ClientGestionDesComptes()
+		: client(1000, "Dalcourt", "Mathieu", "819 640-1681", util::Date(8, 10, 1990))
+	{
+	}
+	banque::Client client;
+};
+
+/**
+ * \brief Test de la methode void ajouterCompte (const Compte& p_nouveauCompte) pour un compte cheque
+ * 		Cas valide: le compte a un no de compte unique
+ */
+TEST_F(ClientGestionDesComptes, ajouterCompteChequeValide)
+{
+	banque::Cheque compteCheque(1, 1.3, 100.0, 20);
+	ostringstream os;
+	os << client.reqClientFormate() << "\n" << compteCheque.reqCompteFormate() << "\n";
+	string resultatAttendu = os.str();
+
+	client.ajouterCompte(compteCheque);
+	ASSERT_EQ(resultatAttendu, client.reqReleves());
+}
+
+/**
+ * \brief Test de la methode void ajouterCompte (const Compte& p_nouveauCompte) pour un compte epargne
+ * 		Cas valide: le compte a un no de compte unique
+ */
+TEST_F(ClientGestionDesComptes, ajouterCompteEpargneValide)
+{
+	banque::Epargne compteEpargne(1, 2, 100);
+	ostringstream os;
+	os << client.reqClientFormate() << "\n" << compteEpargne.reqCompteFormate() << "\n";
+	string resultatAttendu = os.str();
+
+	client.ajouterCompte(compteEpargne);
+	ASSERT_EQ(resultatAttendu, client.reqReleves());
+}
+
+/**
+ * \brief Test de la methode void ajouterCompte (const Compte& p_nouveauCompte) avec un compte invalide
+ * 		Cas Invalide: le no de compte a ajouter est deja present dans la liste des comptes du client
+ */
+TEST_F(ClientGestionDesComptes, ajouterCompteDejaPresent)
+{
+	banque::Cheque compteCheque(1, 1.3, 100.0, 20);
+	client.ajouterCompte(compteCheque);
+	ASSERT_THROW(client.ajouterCompte(banque::Epargne(1, 2, 100)),
+		banque::CompteDejaPresentException);
+}
+
+/**
+ * \brief Test de la methode void ajouterCompte (const Compte& p_nouveauCompte) pour l'ajout de plusieurs comptes valides
+ * 		Cas valide: le compte a un no de compte unique
+ */
+TEST_F(ClientGestionDesComptes, ajouterPlusieursComptesValides)
+{
+	banque::Cheque compteCheque(1, 1.3, 100.0, 20);
+	banque::Cheque compteSupplementaire(2, 1.3, 100.0, 20);
+	ostringstream os;
+	os << client.reqClientFormate() << "\n" << compteCheque.reqCompteFormate() << "\n"
+		<< compteSupplementaire.reqCompteFormate() << "\n";
+	string resultatAttendu = os.str();
+
+	client.ajouterCompte(compteCheque);
+	client.ajouterCompte(compteSupplementaire);
+	ASSERT_EQ(resultatAttendu, client.reqReleves());
+}
+
+/**
+ * \brief Test de la methode void supprimerCompte(int p_noCompte) pour un no de compte valide
+ * 		Cas valide: le compte est present dans la liste
+ */
+TEST_F(ClientGestionDesComptes, supprimerCompteValide)
+{
+	banque::Cheque compteCheque(1, 1.3, 100.0, 20);
+	client.ajouterCompte(compteCheque);
+
+	ostringstream os;
+	os << client.reqClientFormate() << "\n";
+	string resultatAttendu = os.str();
+
+	client.supprimerCompte(1);
+	ASSERT_EQ(resultatAttendu, client.reqReleves());
+}
+
+/**
+ * \brief Test de la methode void supprimerCompte(int p_noCompte) pour un no de compte invalide
+ * 		Cas invalide: le compte est absent de la liste des comptes
+ */
+TEST_F(ClientGestionDesComptes, supprimerCompteAbsent)
+{
+	banque::Cheque compteCheque(1, 1.3, 100.0, 20);
+	client.ajouterCompte(compteCheque);
+
+	ASSERT_THROW(client.supprimerCompte(2), banque::CompteAbsentException);
+}
+
+/**
+ * \brief Test de la methode void supprimerCompte(int p_noCompte) pour plusieurs suppressions
+ */
+TEST_F(ClientGestionDesComptes, supprimerPlusieursComptes)
+{
+	banque::Cheque compte1(1, 1.3, 100.0, 20);
+	banque::Cheque compte2(2, 1.5, 500.0, 10);
+	banque::Epargne compte3(3, 2, 200);
+
+	client.ajouterCompte(compte1);
+	client.ajouterCompte(compte2);
+	client.ajouterCompte(compte3);
+
+	client.supprimerCompte(1);
+	client.supprimerCompte(3);
+
+	ostringstream os;
+	os << client.reqClientFormate() << "\n" << compte2.reqCompteFormate() << "\n";
+	string resultatAttendu = os.str();
+
+	ASSERT_EQ(resultatAttendu, client.reqReleves());
 }
 
