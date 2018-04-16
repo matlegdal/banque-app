@@ -19,7 +19,7 @@ void AjoutChequeInterface::validerEnregistrement()
 	if (ui.doubleSpinBox_tauxInteret->value() < ui.doubleSpinBox_tauxInteretMinimum->value())
 	{
 		QString message("Le taux d'interet doit etre superieur au taux d'interet minimum.");
-		QMessageBox::information(this, "Erreur", message);
+		QMessageBox::warning(this, "Erreur", message);
 		return;
 	}
 	else
