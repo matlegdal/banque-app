@@ -68,8 +68,8 @@
      <property name="title">
       <string>Ajouter un compte</string>
      </property>
-     <addaction name="actionCompte_Ch_que"/>
-     <addaction name="actionCompte_pargne"/>
+     <addaction name="actionCheque"/>
+     <addaction name="actionEpargne"/>
     </widget>
     <addaction name="menuAjouter_un_compte"/>
     <addaction name="actionSupprimer_un_compte"/>
@@ -90,10 +90,20 @@
   </action>
   <action name="actionCompte_Ch_que">
    <property name="text">
-    <string>Compte Chèque</string>
+    <string>Compte Cheque</string>
    </property>
   </action>
   <action name="actionCompte_pargne">
+   <property name="text">
+    <string>Compte Epargne</string>
+   </property>
+  </action>
+  <action name="actionCheque">
+   <property name="text">
+    <string>Compte Chèque</string>
+   </property>
+  </action>
+  <action name="actionEpargne">
    <property name="text">
     <string>Compte Épargne</string>
    </property>

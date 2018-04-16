@@ -3,17 +3,25 @@
 
 #include <QtGui/QMainWindow>
 #include "ui_clientgui.h"
+#include "Client.h"
 
-class ClientGUI : public QMainWindow
+class ClientGUI: public QMainWindow
 {
-    Q_OBJECT
+Q_OBJECT
 
 public:
-    ClientGUI(QWidget *parent = 0);
-    ~ClientGUI();
+	ClientGUI(QWidget *parent = 0);
+	~ClientGUI();
+
+	void ajoutCheque(int p_noCompte, double p_tauxInteret, double p_solde, int p_nombreTransactions,
+		double p_tauxInteretMinimum, const std::string& p_description);
+
+public slots:
+	void dialogAjoutCheque();
 
 private:
-    Ui::ClientGUIClass ui;
+	Ui::ClientGUIClass ui;
+	banque::Client client;
 };
 
 #endif // CLIENTGUI_H

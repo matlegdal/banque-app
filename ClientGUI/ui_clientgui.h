@@ -31,6 +31,8 @@ public:
     QAction *actionSupprimer_un_compte;
     QAction *actionCompte_Ch_que;
     QAction *actionCompte_pargne;
+    QAction *actionCheque;
+    QAction *actionEpargne;
     QWidget *centralwidget;
     QTableWidget *tableWidget;
     QTextBrowser *textBrowser;
@@ -53,6 +55,10 @@ public:
         actionCompte_Ch_que->setObjectName(QString::fromUtf8("actionCompte_Ch_que"));
         actionCompte_pargne = new QAction(ClientGUIClass);
         actionCompte_pargne->setObjectName(QString::fromUtf8("actionCompte_pargne"));
+        actionCheque = new QAction(ClientGUIClass);
+        actionCheque->setObjectName(QString::fromUtf8("actionCheque"));
+        actionEpargne = new QAction(ClientGUIClass);
+        actionEpargne->setObjectName(QString::fromUtf8("actionEpargne"));
         centralwidget = new QWidget(ClientGUIClass);
         centralwidget->setObjectName(QString::fromUtf8("centralwidget"));
         tableWidget = new QTableWidget(centralwidget);
@@ -87,8 +93,8 @@ public:
         menuFichier->addAction(actionQuitter);
         menuActions->addAction(menuAjouter_un_compte->menuAction());
         menuActions->addAction(actionSupprimer_un_compte);
-        menuAjouter_un_compte->addAction(actionCompte_Ch_que);
-        menuAjouter_un_compte->addAction(actionCompte_pargne);
+        menuAjouter_un_compte->addAction(actionCheque);
+        menuAjouter_un_compte->addAction(actionEpargne);
 
         retranslateUi(ClientGUIClass);
         QObject::connect(actionQuitter, SIGNAL(triggered()), ClientGUIClass, SLOT(close()));
@@ -101,8 +107,10 @@ public:
         ClientGUIClass->setWindowTitle(QApplication::translate("ClientGUIClass", "MainWindow", 0, QApplication::UnicodeUTF8));
         actionQuitter->setText(QApplication::translate("ClientGUIClass", "Quitter", 0, QApplication::UnicodeUTF8));
         actionSupprimer_un_compte->setText(QApplication::translate("ClientGUIClass", "Supprimer un compte", 0, QApplication::UnicodeUTF8));
-        actionCompte_Ch_que->setText(QApplication::translate("ClientGUIClass", "Compte Ch\303\250que", 0, QApplication::UnicodeUTF8));
-        actionCompte_pargne->setText(QApplication::translate("ClientGUIClass", "Compte \303\211pargne", 0, QApplication::UnicodeUTF8));
+        actionCompte_Ch_que->setText(QApplication::translate("ClientGUIClass", "Compte Cheque", 0, QApplication::UnicodeUTF8));
+        actionCompte_pargne->setText(QApplication::translate("ClientGUIClass", "Compte Epargne", 0, QApplication::UnicodeUTF8));
+        actionCheque->setText(QApplication::translate("ClientGUIClass", "Compte Ch\303\250que", 0, QApplication::UnicodeUTF8));
+        actionEpargne->setText(QApplication::translate("ClientGUIClass", "Compte \303\211pargne", 0, QApplication::UnicodeUTF8));
         QTableWidgetItem *___qtablewidgetitem = tableWidget->horizontalHeaderItem(0);
         ___qtablewidgetitem->setText(QApplication::translate("ClientGUIClass", "No Compte", 0, QApplication::UnicodeUTF8));
         QTableWidgetItem *___qtablewidgetitem1 = tableWidget->horizontalHeaderItem(1);
