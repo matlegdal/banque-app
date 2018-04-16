@@ -108,9 +108,10 @@ std::string Client::reqReleves() const
 {
 	std::ostringstream os;
 	os << reqClientFormate() << "\n";
-	for (unsigned int i = 0; i < m_vComptes.size(); ++i)
+	std::vector<Compte*>::const_iterator it;
+	for (it = m_vComptes.begin(); it < m_vComptes.end(); it++)
 	{
-		os << m_vComptes[i]->reqCompteFormate() << "\n";
+		os << (*it)->reqCompteFormate() << "\n";
 	}
 	return os.str();
 }
