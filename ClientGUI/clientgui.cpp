@@ -44,6 +44,14 @@ void ClientGUI::ajoutCheque(int p_noCompte, double p_tauxInteret, double p_solde
 		banque::Cheque compteCheque(p_noCompte, p_tauxInteret, p_solde, p_nombreTransactions,
 			p_tauxInteretMinimum, p_description);
 		client.ajouterCompte(compteCheque);
+
+		int rowCount = ui.tableWidget_comptes->rowCount();
+		ui.tableWidget_comptes->setRowCount(rowCount + 1);
+
+		QString s = QString::number(compteCheque.reqNoCompte());
+		ui.tableWidget_comptes->setItem(rowCount, 0, new QTableWidgetItem(s));
+		ui.tableWidget_comptes->setItem(rowCount, 1, new QTableWidgetItem("Cheque"));
+
 	} catch (banque::CompteDejaPresentException e)
 	{
 		QString message = e.what();

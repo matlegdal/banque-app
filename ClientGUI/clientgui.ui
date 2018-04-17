@@ -17,11 +17,14 @@
    <widget class="QTableWidget" name="tableWidget_comptes">
     <property name="geometry">
      <rect>
-      <x>10</x>
+      <x>20</x>
       <y>120</y>
-      <width>401</width>
+      <width>361</width>
       <height>421</height>
      </rect>
+    </property>
+    <property name="editTriggers">
+     <set>QAbstractItemView::NoEditTriggers</set>
     </property>
     <column>
      <property name="text">
@@ -37,7 +40,7 @@
    <widget class="QTextBrowser" name="textBrowser_infoComptes">
     <property name="geometry">
      <rect>
-      <x>430</x>
+      <x>420</x>
       <y>120</y>
       <width>361</width>
       <height>421</height>
@@ -47,9 +50,9 @@
    <widget class="QTextBrowser" name="textBrowser_infoClient">
     <property name="geometry">
      <rect>
-      <x>10</x>
+      <x>20</x>
       <y>10</y>
-      <width>781</width>
+      <width>761</width>
       <height>81</height>
      </rect>
     </property>

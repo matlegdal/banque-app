@@ -70,13 +70,14 @@ public:
         QTableWidgetItem *__qtablewidgetitem1 = new QTableWidgetItem();
         tableWidget_comptes->setHorizontalHeaderItem(1, __qtablewidgetitem1);
         tableWidget_comptes->setObjectName(QString::fromUtf8("tableWidget_comptes"));
-        tableWidget_comptes->setGeometry(QRect(10, 120, 401, 421));
+        tableWidget_comptes->setGeometry(QRect(20, 120, 361, 421));
+        tableWidget_comptes->setEditTriggers(QAbstractItemView::NoEditTriggers);
         textBrowser_infoComptes = new QTextBrowser(centralwidget);
         textBrowser_infoComptes->setObjectName(QString::fromUtf8("textBrowser_infoComptes"));
-        textBrowser_infoComptes->setGeometry(QRect(430, 120, 361, 421));
+        textBrowser_infoComptes->setGeometry(QRect(420, 120, 361, 421));
         textBrowser_infoClient = new QTextBrowser(centralwidget);
         textBrowser_infoClient->setObjectName(QString::fromUtf8("textBrowser_infoClient"));
-        textBrowser_infoClient->setGeometry(QRect(10, 10, 781, 81));
+        textBrowser_infoClient->setGeometry(QRect(20, 10, 761, 81));
         ClientGUIClass->setCentralWidget(centralwidget);
         menubar = new QMenuBar(ClientGUIClass);
         menubar->setObjectName(QString::fromUtf8("menubar"));
