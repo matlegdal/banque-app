@@ -1,0 +1,9 @@
+17:19:12 **** Incremental Build of project ClientGUI ****
+make debug 
+make -f Makefile.Debug
+make[1] : on entre dans le répertoire « /mnt/hgfs/shared/Cpp/tp4/ClientGUI »
+make[1]: rien à faire pour « first ».
+make[1] : on quitte le répertoire « /mnt/hgfs/shared/Cpp/tp4/ClientGUI »
+
+17:19:12 Build Finished (took 446ms)
+

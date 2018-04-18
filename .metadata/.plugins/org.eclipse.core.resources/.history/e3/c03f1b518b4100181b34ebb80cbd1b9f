@@ -1,0 +1,28 @@
+/*
+ * CompteException.h
+ *
+ *  Created on: 2018-04-16
+ *      Author: etudiant
+ */
+
+#ifndef COMPTEEXCEPTION_H_
+#define COMPTEEXCEPTION_H_
+
+namespace banque
+{
+
+class CompteException: public std::runtime_error
+{
+public:
+	CompteException(const std::string& p_raison);
+};
+
+class CompteDejaPresentException: public CompteException
+{
+public:
+	CompteDejaPresentException();
+};
+
+} /* namespace banque */
+
+#endif /* COMPTEEXCEPTION_H_ */

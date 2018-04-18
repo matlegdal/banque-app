@@ -1,0 +1,32 @@
+#include "ajoutchequeinterface.h"
+
+AjoutChequeInterface::AjoutChequeInterface(QWidget *parent)
+	: QDialog(parent)
+{
+	ui.setupUi(this);
+}
+
+AjoutChequeInterface::~AjoutChequeInterface()
+{
+
+}
+
+int AjoutChequeInterface::reqNoCompte()
+{
+
+}
+double AjoutChequeInterface::reqTauxInteret(){
+
+}
+double AjoutChequeInterface::solde(){
+
+}
+int AjoutChequeInterface::nombreTransactions(){
+
+}
+double AjoutChequeInterface::tauxInteretMinimum(){
+
+}
+QString AjoutChequeInterface::reqDescription(){
+
+}

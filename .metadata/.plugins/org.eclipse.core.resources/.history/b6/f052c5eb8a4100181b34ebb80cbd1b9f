@@ -1,0 +1,19 @@
+/*
+ * CompteException.cpp
+ *
+ *  Created on: 2018-04-16
+ *      Author: etudiant
+ */
+
+#include "CompteException.h"
+
+namespace banque
+{
+
+CompteException::CompteException()
+{
+	// TODO Auto-generated constructor stub
+
+}
+
+} /* namespace banque */

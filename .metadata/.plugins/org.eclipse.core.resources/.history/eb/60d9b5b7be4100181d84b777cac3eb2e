@@ -1,0 +1,12 @@
+#include "ajoutchequeinterface.h"
+
+AjoutChequeInterface::AjoutChequeInterface(QWidget *parent)
+    : QDialog(parent)
+{
+	ui.setupUi(this);
+}
+
+AjoutChequeInterface::~AjoutChequeInterface()
+{
+
+}

@@ -1,0 +1,1163 @@
+16:53:40 **** Incremental Build of configuration Debug for project source ****
+make all 
+make: rien à faire pour « all ».
+16:53:43 **** Incremental Build of project ClientGUI ****
+make debug 
+make -f Makefile.Debug
+make[1] : on entre dans le répertoire « /mnt/hgfs/shared/Cpp/tp4/ClientGUI »
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../source -Idebug -I. -o debug/main.o main.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../source -Idebug -I. -o debug/clientgui.o clientgui.cpp
+/usr/lib/i386-linux-gnu/qt4/bin/moc -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../source -Idebug -I. clientgui.h -o debug/moc_clientgui.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../source -Idebug -I. -o debug/moc_clientgui.o debug/moc_clientgui.cpp
+g++  -o ClientGUI debug/main.o debug/clientgui.o debug/moc_clientgui.o    -L/usr/lib/i386-linux-gnu ../source/Debug/libsource.a -lQtGui -lQtCore -lpthread 
+debug/moc_clientgui.o : Dans la fonction « ClientGUI::qt_static_metacall(QObject*, QMetaObject::Call, int, void**) » :
+/mnt/hgfs/shared/Cpp/tp4/ClientGUI/debug/moc_clientgui.cpp:48 : référence indéfinie vers « ClientGUI::dialogAjoutCheque() »
+collect2: error: ld returned 1 exit status
+Makefile.Debug:107 : la recette pour la cible « ClientGUI » a échouée
+make[1] : on quitte le répertoire « /mnt/hgfs/shared/Cpp/tp4/ClientGUI »
+Makefile:50 : la recette pour la cible « debug » a échouée
+make[1]: *** [ClientGUI] Erreur 1
+make: *** [debug] Erreur 2
+16:54:45 **** Incremental Build of configuration Debug for project source ****
+make all 
+make: rien à faire pour « all ».
+16:54:47 **** Incremental Build of configuration Debug for project Testeurs ****
+make all 
+make: rien à faire pour « all ».
+16:54:47 **** Incremental Build of project ClientGUI ****
+make debug 
+make -f Makefile.Debug
+make[1] : on entre dans le répertoire « /mnt/hgfs/shared/Cpp/tp4/ClientGUI »
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../source -Idebug -I. -o debug/clientgui.o clientgui.cpp
+g++  -o ClientGUI debug/main.o debug/clientgui.o debug/moc_clientgui.o    -L/usr/lib/i386-linux-gnu ../source/Debug/libsource.a -lQtGui -lQtCore -lpthread 
+{ test -n "" && DESTDIR="" || DESTDIR=.; } && test $(gdb --version | sed -e 's,[^0-9][^0-9]*\([0-9]\)\.\([0-9]\).*,\1\2,;q') -gt 72 && gdb --nx --batch --quiet -ex 'set confirm off' -ex "save gdb-index $DESTDIR" -ex quit 'ClientGUI' && test -f ClientGUI.gdb-index && objcopy --add-section '.gdb_index=ClientGUI.gdb-index' --set-section-flags '.gdb_index=readonly' 'ClientGUI' 'ClientGUI' && rm -f ClientGUI.gdb-index || true
+make[1] : on quitte le répertoire « /mnt/hgfs/shared/Cpp/tp4/ClientGUI »
+16:54:58 **** Incremental Build of configuration Debug for project source ****
+make all 
+make: rien à faire pour « all ».
+16:55:00 **** Incremental Build of project ClientGUI ****
+make debug 
+make -f Makefile.Debug
+make[1] : on entre dans le répertoire « /mnt/hgfs/shared/Cpp/tp4/ClientGUI »
+make[1]: rien à faire pour « first ».
+make[1] : on quitte le répertoire « /mnt/hgfs/shared/Cpp/tp4/ClientGUI »
+16:55:42 **** Incremental Build of configuration Debug for project source ****
+make all 
+make: rien à faire pour « all ».
+16:55:44 **** Incremental Build of configuration Debug for project Testeurs ****
+make all 
+make: rien à faire pour « all ».
+16:55:45 **** Incremental Build of project ClientGUI ****
+make debug 
+make -f Makefile.Debug
+make[1] : on entre dans le répertoire « /mnt/hgfs/shared/Cpp/tp4/ClientGUI »
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../source -Idebug -I. -o debug/clientgui.o clientgui.cpp
+g++  -o ClientGUI debug/main.o debug/clientgui.o debug/moc_clientgui.o    -L/usr/lib/i386-linux-gnu ../source/Debug/libsource.a -lQtGui -lQtCore -lpthread 
+{ test -n "" && DESTDIR="" || DESTDIR=.; } && test $(gdb --version | sed -e 's,[^0-9][^0-9]*\([0-9]\)\.\([0-9]\).*,\1\2,;q') -gt 72 && gdb --nx --batch --quiet -ex 'set confirm off' -ex "save gdb-index $DESTDIR" -ex quit 'ClientGUI' && test -f ClientGUI.gdb-index && objcopy --add-section '.gdb_index=ClientGUI.gdb-index' --set-section-flags '.gdb_index=readonly' 'ClientGUI' 'ClientGUI' && rm -f ClientGUI.gdb-index || true
+make[1] : on quitte le répertoire « /mnt/hgfs/shared/Cpp/tp4/ClientGUI »
+16:55:51 **** Incremental Build of configuration Debug for project source ****
+make all 
+make: rien à faire pour « all ».
+16:55:53 **** Incremental Build of project ClientGUI ****
+make debug 
+make -f Makefile.Debug
+make[1] : on entre dans le répertoire « /mnt/hgfs/shared/Cpp/tp4/ClientGUI »
+make[1]: rien à faire pour « first ».
+make[1] : on quitte le répertoire « /mnt/hgfs/shared/Cpp/tp4/ClientGUI »
+17:01:46 **** Incremental Build of configuration Debug for project source ****
+make all 
+make: rien à faire pour « all ».
+17:01:48 **** Incremental Build of configuration Debug for project Testeurs ****
+make all 
+make: rien à faire pour « all ».
+17:01:48 **** Incremental Build of project ClientGUI ****
+make debug 
+/usr/lib/i386-linux-gnu/qt4/bin/qmake CONFIG+=debug_and_release -o Makefile ClientGUI.pro
+make -f Makefile.Debug
+make[1] : on entre dans le répertoire « /mnt/hgfs/shared/Cpp/tp4/ClientGUI »
+/usr/lib/i386-linux-gnu/qt4/bin/uic ajoutchequeinterface.ui -o ui_ajoutchequeinterface.h
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../source -Idebug -I. -o debug/ajoutchequeinterface.o ajoutchequeinterface.cpp
+/usr/lib/i386-linux-gnu/qt4/bin/moc -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../source -Idebug -I. ajoutchequeinterface.h -o debug/moc_ajoutchequeinterface.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../source -Idebug -I. -o debug/moc_ajoutchequeinterface.o debug/moc_ajoutchequeinterface.cpp
+g++  -o ClientGUI debug/ajoutchequeinterface.o debug/main.o debug/clientgui.o debug/moc_ajoutchequeinterface.o debug/moc_clientgui.o    -L/usr/lib/i386-linux-gnu ../source/Debug/libsource.a -lQtGui -lQtCore -lpthread 
+{ test -n "" && DESTDIR="" || DESTDIR=.; } && test $(gdb --version | sed -e 's,[^0-9][^0-9]*\([0-9]\)\.\([0-9]\).*,\1\2,;q') -gt 72 && gdb --nx --batch --quiet -ex 'set confirm off' -ex "save gdb-index $DESTDIR" -ex quit 'ClientGUI' && test -f ClientGUI.gdb-index && objcopy --add-section '.gdb_index=ClientGUI.gdb-index' --set-section-flags '.gdb_index=readonly' 'ClientGUI' 'ClientGUI' && rm -f ClientGUI.gdb-index || true
+make[1] : on quitte le répertoire « /mnt/hgfs/shared/Cpp/tp4/ClientGUI »
+17:01:59 **** Incremental Build of configuration Debug for project source ****
+make all 
+make: rien à faire pour « all ».
+17:02:01 **** Incremental Build of project ClientGUI ****
+make debug 
+make -f Makefile.Debug
+make[1] : on entre dans le répertoire « /mnt/hgfs/shared/Cpp/tp4/ClientGUI »
+make[1]: rien à faire pour « first ».
+make[1] : on quitte le répertoire « /mnt/hgfs/shared/Cpp/tp4/ClientGUI »
+17:04:06 **** Incremental Build of configuration Debug for project source ****
+make all 
+make: rien à faire pour « all ».
+17:04:08 **** Incremental Build of configuration Debug for project Testeurs ****
+make all 
+make: rien à faire pour « all ».
+17:04:09 **** Incremental Build of project ClientGUI ****
+make debug 
+make -f Makefile.Debug
+make[1] : on entre dans le répertoire « /mnt/hgfs/shared/Cpp/tp4/ClientGUI »
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../source -Idebug -I. -o debug/clientgui.o clientgui.cpp
+g++  -o ClientGUI debug/ajoutchequeinterface.o debug/main.o debug/clientgui.o debug/moc_ajoutchequeinterface.o debug/moc_clientgui.o    -L/usr/lib/i386-linux-gnu ../source/Debug/libsource.a -lQtGui -lQtCore -lpthread 
+{ test -n "" && DESTDIR="" || DESTDIR=.; } && test $(gdb --version | sed -e 's,[^0-9][^0-9]*\([0-9]\)\.\([0-9]\).*,\1\2,;q') -gt 72 && gdb --nx --batch --quiet -ex 'set confirm off' -ex "save gdb-index $DESTDIR" -ex quit 'ClientGUI' && test -f ClientGUI.gdb-index && objcopy --add-section '.gdb_index=ClientGUI.gdb-index' --set-section-flags '.gdb_index=readonly' 'ClientGUI' 'ClientGUI' && rm -f ClientGUI.gdb-index || true
+make[1] : on quitte le répertoire « /mnt/hgfs/shared/Cpp/tp4/ClientGUI »
+17:04:14 **** Incremental Build of configuration Debug for project source ****
+make all 
+make: rien à faire pour « all ».
+17:04:16 **** Incremental Build of project ClientGUI ****
+make debug 
+make -f Makefile.Debug
+make[1] : on entre dans le répertoire « /mnt/hgfs/shared/Cpp/tp4/ClientGUI »
+make[1]: rien à faire pour « first ».
+make[1] : on quitte le répertoire « /mnt/hgfs/shared/Cpp/tp4/ClientGUI »
+17:18:04 **** Incremental Build of configuration Debug for project source ****
+make all 
+make: rien à faire pour « all ».
+17:18:06 **** Incremental Build of configuration Debug for project Testeurs ****
+make all 
+make: rien à faire pour « all ».
+17:18:07 **** Incremental Build of project ClientGUI ****
+make debug 
+make -f Makefile.Debug
+make[1] : on entre dans le répertoire « /mnt/hgfs/shared/Cpp/tp4/ClientGUI »
+/usr/lib/i386-linux-gnu/qt4/bin/uic ajoutchequeinterface.ui -o ui_ajoutchequeinterface.h
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../source -Idebug -I. -o debug/ajoutchequeinterface.o ajoutchequeinterface.cpp
+/usr/lib/i386-linux-gnu/qt4/bin/moc -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../source -Idebug -I. ajoutchequeinterface.h -o debug/moc_ajoutchequeinterface.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../source -Idebug -I. -o debug/moc_ajoutchequeinterface.o debug/moc_ajoutchequeinterface.cpp
+g++  -o ClientGUI debug/ajoutchequeinterface.o debug/main.o debug/clientgui.o debug/moc_ajoutchequeinterface.o debug/moc_clientgui.o    -L/usr/lib/i386-linux-gnu ../source/Debug/libsource.a -lQtGui -lQtCore -lpthread 
+{ test -n "" && DESTDIR="" || DESTDIR=.; } && test $(gdb --version | sed -e 's,[^0-9][^0-9]*\([0-9]\)\.\([0-9]\).*,\1\2,;q') -gt 72 && gdb --nx --batch --quiet -ex 'set confirm off' -ex "save gdb-index $DESTDIR" -ex quit 'ClientGUI' && test -f ClientGUI.gdb-index && objcopy --add-section '.gdb_index=ClientGUI.gdb-index' --set-section-flags '.gdb_index=readonly' 'ClientGUI' 'ClientGUI' && rm -f ClientGUI.gdb-index || true
+make[1] : on quitte le répertoire « /mnt/hgfs/shared/Cpp/tp4/ClientGUI »
+17:18:14 **** Incremental Build of configuration Debug for project source ****
+make all 
+make: rien à faire pour « all ».
+17:18:16 **** Incremental Build of project ClientGUI ****
+make debug 
+make -f Makefile.Debug
+make[1] : on entre dans le répertoire « /mnt/hgfs/shared/Cpp/tp4/ClientGUI »
+make[1]: rien à faire pour « first ».
+make[1] : on quitte le répertoire « /mnt/hgfs/shared/Cpp/tp4/ClientGUI »
+17:31:04 **** Incremental Build of configuration Debug for project source ****
+make all 
+make: rien à faire pour « all ».
+17:31:06 **** Incremental Build of configuration Debug for project Testeurs ****
+make all 
+make: rien à faire pour « all ».
+17:31:06 **** Incremental Build of project ClientGUI ****
+make debug 
+make -f Makefile.Debug
+make[1] : on entre dans le répertoire « /mnt/hgfs/shared/Cpp/tp4/ClientGUI »
+/usr/lib/i386-linux-gnu/qt4/bin/uic ajoutchequeinterface.ui -o ui_ajoutchequeinterface.h
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../source -Idebug -I. -o debug/ajoutchequeinterface.o ajoutchequeinterface.cpp
+/usr/lib/i386-linux-gnu/qt4/bin/moc -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../source -Idebug -I. ajoutchequeinterface.h -o debug/moc_ajoutchequeinterface.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../source -Idebug -I. -o debug/moc_ajoutchequeinterface.o debug/moc_ajoutchequeinterface.cpp
+g++  -o ClientGUI debug/ajoutchequeinterface.o debug/main.o debug/clientgui.o debug/moc_ajoutchequeinterface.o debug/moc_clientgui.o    -L/usr/lib/i386-linux-gnu ../source/Debug/libsource.a -lQtGui -lQtCore -lpthread 
+{ test -n "" && DESTDIR="" || DESTDIR=.; } && test $(gdb --version | sed -e 's,[^0-9][^0-9]*\([0-9]\)\.\([0-9]\).*,\1\2,;q') -gt 72 && gdb --nx --batch --quiet -ex 'set confirm off' -ex "save gdb-index $DESTDIR" -ex quit 'ClientGUI' && test -f ClientGUI.gdb-index && objcopy --add-section '.gdb_index=ClientGUI.gdb-index' --set-section-flags '.gdb_index=readonly' 'ClientGUI' 'ClientGUI' && rm -f ClientGUI.gdb-index || true
+make[1] : on quitte le répertoire « /mnt/hgfs/shared/Cpp/tp4/ClientGUI »
+17:31:13 **** Incremental Build of configuration Debug for project source ****
+make all 
+make: rien à faire pour « all ».
+17:31:14 **** Incremental Build of project ClientGUI ****
+make debug 
+make -f Makefile.Debug
+make[1] : on entre dans le répertoire « /mnt/hgfs/shared/Cpp/tp4/ClientGUI »
+make[1]: rien à faire pour « first ».
+make[1] : on quitte le répertoire « /mnt/hgfs/shared/Cpp/tp4/ClientGUI »
+17:51:44 **** Incremental Build of configuration Debug for project source ****
+make all 
+make: rien à faire pour « all ».
+17:51:46 **** Incremental Build of configuration Debug for project Testeurs ****
+make all 
+make: rien à faire pour « all ».
+17:51:46 **** Incremental Build of project ClientGUI ****
+make debug 
+make -f Makefile.Debug
+make[1] : on entre dans le répertoire « /mnt/hgfs/shared/Cpp/tp4/ClientGUI »
+/usr/lib/i386-linux-gnu/qt4/bin/uic ajoutchequeinterface.ui -o ui_ajoutchequeinterface.h
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../source -Idebug -I. -o debug/ajoutchequeinterface.o ajoutchequeinterface.cpp
+ajoutchequeinterface.cpp: In constructor ‘AjoutChequeInterface::AjoutChequeInterface(QWidget*)’:
+ajoutchequeinterface.cpp:7:9: error: expected unqualified-id before ‘.’ token
+  QObject.connect(ui.pushButton_ajoutCheque, SIGNAL(clicked()), this,
+         ^
+ajoutchequeinterface.cpp: In member function ‘QString AjoutChequeInterface::reqDescription() const’:
+ajoutchequeinterface.cpp:43:9: error: ‘lineEdit_description’ was not declared in this scope
+  return lineEdit_description->text();
+         ^
+Makefile.Debug:179 : la recette pour la cible « debug/ajoutchequeinterface.o » a échouée
+make[1] : on quitte le répertoire « /mnt/hgfs/shared/Cpp/tp4/ClientGUI »
+make[1]: *** [debug/ajoutchequeinterface.o] Erreur 1
+Makefile:50 : la recette pour la cible « debug » a échouée
+make: *** [debug] Erreur 2
+17:52:13 **** Incremental Build of configuration Debug for project source ****
+make all 
+make: rien à faire pour « all ».
+17:52:15 **** Incremental Build of configuration Debug for project Testeurs ****
+make all 
+make: rien à faire pour « all ».
+17:52:15 **** Incremental Build of project ClientGUI ****
+make debug 
+make -f Makefile.Debug
+make[1] : on entre dans le répertoire « /mnt/hgfs/shared/Cpp/tp4/ClientGUI »
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../source -Idebug -I. -o debug/ajoutchequeinterface.o ajoutchequeinterface.cpp
+ajoutchequeinterface.cpp: In member function ‘QString AjoutChequeInterface::reqDescription() const’:
+ajoutchequeinterface.cpp:43:9: error: ‘lineEdit_description’ was not declared in this scope
+  return lineEdit_description->text();
+         ^
+Makefile.Debug:179 : la recette pour la cible « debug/ajoutchequeinterface.o » a échouée
+make[1] : on quitte le répertoire « /mnt/hgfs/shared/Cpp/tp4/ClientGUI »
+make[1]: *** [debug/ajoutchequeinterface.o] Erreur 1
+make: *** [debug] Erreur 2
+Makefile:50 : la recette pour la cible « debug » a échouée
+17:52:31 **** Incremental Build of configuration Debug for project source ****
+make all 
+make: rien à faire pour « all ».
+17:52:34 **** Incremental Build of configuration Debug for project Testeurs ****
+make all 
+make: rien à faire pour « all ».
+17:52:34 **** Incremental Build of project ClientGUI ****
+make debug 
+make -f Makefile.Debug
+make[1] : on entre dans le répertoire « /mnt/hgfs/shared/Cpp/tp4/ClientGUI »
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../source -Idebug -I. -o debug/ajoutchequeinterface.o ajoutchequeinterface.cpp
+/usr/lib/i386-linux-gnu/qt4/bin/moc -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../source -Idebug -I. ajoutchequeinterface.h -o debug/moc_ajoutchequeinterface.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../source -Idebug -I. -o debug/moc_ajoutchequeinterface.o debug/moc_ajoutchequeinterface.cpp
+g++  -o ClientGUI debug/ajoutchequeinterface.o debug/main.o debug/clientgui.o debug/moc_ajoutchequeinterface.o debug/moc_clientgui.o    -L/usr/lib/i386-linux-gnu ../source/Debug/libsource.a -lQtGui -lQtCore -lpthread 
+{ test -n "" && DESTDIR="" || DESTDIR=.; } && test $(gdb --version | sed -e 's,[^0-9][^0-9]*\([0-9]\)\.\([0-9]\).*,\1\2,;q') -gt 72 && gdb --nx --batch --quiet -ex 'set confirm off' -ex "save gdb-index $DESTDIR" -ex quit 'ClientGUI' && test -f ClientGUI.gdb-index && objcopy --add-section '.gdb_index=ClientGUI.gdb-index' --set-section-flags '.gdb_index=readonly' 'ClientGUI' 'ClientGUI' && rm -f ClientGUI.gdb-index || true
+make[1] : on quitte le répertoire « /mnt/hgfs/shared/Cpp/tp4/ClientGUI »
+17:58:35 **** Incremental Build of configuration Debug for project source ****
+make all 
+make: rien à faire pour « all ».
+17:58:37 **** Incremental Build of configuration Debug for project Testeurs ****
+make all 
+make: rien à faire pour « all ».
+17:58:38 **** Incremental Build of project ClientGUI ****
+make debug 
+make -f Makefile.Debug
+make[1] : on entre dans le répertoire « /mnt/hgfs/shared/Cpp/tp4/ClientGUI »
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../source -Idebug -I. -o debug/ajoutchequeinterface.o ajoutchequeinterface.cpp
+ajoutchequeinterface.cpp: In member function ‘void AjoutChequeInterface::validerEnregistrement()’:
+ajoutchequeinterface.cpp:19:35: error: request for member ‘isEmpty’ in ‘((AjoutChequeInterface*)this)->AjoutChequeInterface::ui.Ui::AjoutChequeInterfaceClass::<anonymous>.Ui_AjoutChequeInterfaceClass::spinBox_noCompte->QSpinBox::value()’, which is of non-class type ‘int’
+  if (ui.spinBox_noCompte->value().isEmpty())
+                                   ^
+Makefile.Debug:179 : la recette pour la cible « debug/ajoutchequeinterface.o » a échouée
+make[1] : on quitte le répertoire « /mnt/hgfs/shared/Cpp/tp4/ClientGUI »
+make[1]: *** [debug/ajoutchequeinterface.o] Erreur 1
+make: *** [debug] Erreur 2
+Makefile:50 : la recette pour la cible « debug » a échouée
+18:00:49 **** Incremental Build of configuration Debug for project source ****
+make all 
+make: rien à faire pour « all ».
+18:00:51 **** Incremental Build of configuration Debug for project Testeurs ****
+make all 
+make: rien à faire pour « all ».
+18:00:51 **** Incremental Build of project ClientGUI ****
+make debug 
+make -f Makefile.Debug
+make[1] : on entre dans le répertoire « /mnt/hgfs/shared/Cpp/tp4/ClientGUI »
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../source -Idebug -I. -o debug/ajoutchequeinterface.o ajoutchequeinterface.cpp
+g++  -o ClientGUI debug/ajoutchequeinterface.o debug/main.o debug/clientgui.o debug/moc_ajoutchequeinterface.o debug/moc_clientgui.o    -L/usr/lib/i386-linux-gnu ../source/Debug/libsource.a -lQtGui -lQtCore -lpthread 
+{ test -n "" && DESTDIR="" || DESTDIR=.; } && test $(gdb --version | sed -e 's,[^0-9][^0-9]*\([0-9]\)\.\([0-9]\).*,\1\2,;q') -gt 72 && gdb --nx --batch --quiet -ex 'set confirm off' -ex "save gdb-index $DESTDIR" -ex quit 'ClientGUI' && test -f ClientGUI.gdb-index && objcopy --add-section '.gdb_index=ClientGUI.gdb-index' --set-section-flags '.gdb_index=readonly' 'ClientGUI' 'ClientGUI' && rm -f ClientGUI.gdb-index || true
+make[1] : on quitte le répertoire « /mnt/hgfs/shared/Cpp/tp4/ClientGUI »
+18:00:57 **** Incremental Build of configuration Debug for project source ****
+make all 
+make: rien à faire pour « all ».
+18:00:59 **** Incremental Build of project ClientGUI ****
+make debug 
+make -f Makefile.Debug
+make[1] : on entre dans le répertoire « /mnt/hgfs/shared/Cpp/tp4/ClientGUI »
+make[1]: rien à faire pour « first ».
+make[1] : on quitte le répertoire « /mnt/hgfs/shared/Cpp/tp4/ClientGUI »
+18:07:05 **** Incremental Build of configuration Debug for project source ****
+make all 
+make: rien à faire pour « all ».
+18:07:07 **** Incremental Build of configuration Debug for project Testeurs ****
+make all 
+make: rien à faire pour « all ».
+18:07:08 **** Incremental Build of project ClientGUI ****
+make debug 
+make -f Makefile.Debug
+make[1] : on entre dans le répertoire « /mnt/hgfs/shared/Cpp/tp4/ClientGUI »
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../source -Idebug -I. -o debug/ajoutchequeinterface.o ajoutchequeinterface.cpp
+g++  -o ClientGUI debug/ajoutchequeinterface.o debug/main.o debug/clientgui.o debug/moc_ajoutchequeinterface.o debug/moc_clientgui.o    -L/usr/lib/i386-linux-gnu ../source/Debug/libsource.a -lQtGui -lQtCore -lpthread 
+{ test -n "" && DESTDIR="" || DESTDIR=.; } && test $(gdb --version | sed -e 's,[^0-9][^0-9]*\([0-9]\)\.\([0-9]\).*,\1\2,;q') -gt 72 && gdb --nx --batch --quiet -ex 'set confirm off' -ex "save gdb-index $DESTDIR" -ex quit 'ClientGUI' && test -f ClientGUI.gdb-index && objcopy --add-section '.gdb_index=ClientGUI.gdb-index' --set-section-flags '.gdb_index=readonly' 'ClientGUI' 'ClientGUI' && rm -f ClientGUI.gdb-index || true
+make[1] : on quitte le répertoire « /mnt/hgfs/shared/Cpp/tp4/ClientGUI »
+18:13:12 **** Incremental Build of configuration Debug for project source ****
+make all 
+make: rien à faire pour « all ».
+18:13:15 **** Incremental Build of configuration Debug for project Testeurs ****
+make all 
+make: rien à faire pour « all ».
+18:13:15 **** Incremental Build of project ClientGUI ****
+make debug 
+make -f Makefile.Debug
+make[1] : on entre dans le répertoire « /mnt/hgfs/shared/Cpp/tp4/ClientGUI »
+/usr/lib/i386-linux-gnu/qt4/bin/uic ajoutchequeinterface.ui -o ui_ajoutchequeinterface.h
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../source -Idebug -I. -o debug/ajoutchequeinterface.o ajoutchequeinterface.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../source -Idebug -I. -o debug/clientgui.o clientgui.cpp
+clientgui.cpp: In member function ‘void ClientGUI::dialogAjoutCheque()’:
+clientgui.cpp:23:71: error: ‘ajoutCheque’ was not declared in this scope
+    saisieCheque.reqTauxInteretMinimum(), saisieCheque.reqDescription());
+                                                                       ^
+Makefile.Debug:187 : la recette pour la cible « debug/clientgui.o » a échouée
+make[1] : on quitte le répertoire « /mnt/hgfs/shared/Cpp/tp4/ClientGUI »
+make[1]: *** [debug/clientgui.o] Erreur 1
+make: *** [debug] Erreur 2
+Makefile:50 : la recette pour la cible « debug » a échouée
+18:17:33 **** Incremental Build of configuration Debug for project source ****
+make all 
+make: rien à faire pour « all ».
+18:17:35 **** Incremental Build of configuration Debug for project Testeurs ****
+make all 
+make: rien à faire pour « all ».
+18:17:35 **** Incremental Build of project ClientGUI ****
+make debug 
+make -f Makefile.Debug
+make[1] : on entre dans le répertoire « /mnt/hgfs/shared/Cpp/tp4/ClientGUI »
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../source -Idebug -I. -o debug/main.o main.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../source -Idebug -I. -o debug/clientgui.o clientgui.cpp
+clientgui.cpp:27:33: warning: unused parameter ‘p_noCompte’ [-Wunused-parameter]
+ void ClientGUI::ajoutCheque(int p_noCompte, double p_tauxInteret, double p_solde,
+                                 ^
+clientgui.cpp:27:52: warning: unused parameter ‘p_tauxInteret’ [-Wunused-parameter]
+ void ClientGUI::ajoutCheque(int p_noCompte, double p_tauxInteret, double p_solde,
+                                                    ^
+clientgui.cpp:27:74: warning: unused parameter ‘p_solde’ [-Wunused-parameter]
+ void ClientGUI::ajoutCheque(int p_noCompte, double p_tauxInteret, double p_solde,
+                                                                          ^
+clientgui.cpp:28:6: warning: unused parameter ‘p_nombreTransactions’ [-Wunused-parameter]
+  int p_nombreTransactions, double p_tauxInteretMinimum, const std::string& p_description)
+      ^
+clientgui.cpp:28:35: warning: unused parameter ‘p_tauxInteretMinimum’ [-Wunused-parameter]
+  int p_nombreTransactions, double p_tauxInteretMinimum, const std::string& p_description)
+                                   ^
+clientgui.cpp:28:76: warning: unused parameter ‘p_description’ [-Wunused-parameter]
+  int p_nombreTransactions, double p_tauxInteretMinimum, const std::string& p_description)
+                                                                            ^
+/usr/lib/i386-linux-gnu/qt4/bin/moc -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../source -Idebug -I. ajoutchequeinterface.h -o debug/moc_ajoutchequeinterface.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../source -Idebug -I. -o debug/moc_ajoutchequeinterface.o debug/moc_ajoutchequeinterface.cpp
+/usr/lib/i386-linux-gnu/qt4/bin/moc -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../source -Idebug -I. clientgui.h -o debug/moc_clientgui.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../source -Idebug -I. -o debug/moc_clientgui.o debug/moc_clientgui.cpp
+g++  -o ClientGUI debug/ajoutchequeinterface.o debug/main.o debug/clientgui.o debug/moc_ajoutchequeinterface.o debug/moc_clientgui.o    -L/usr/lib/i386-linux-gnu ../source/Debug/libsource.a -lQtGui -lQtCore -lpthread 
+{ test -n "" && DESTDIR="" || DESTDIR=.; } && test $(gdb --version | sed -e 's,[^0-9][^0-9]*\([0-9]\)\.\([0-9]\).*,\1\2,;q') -gt 72 && gdb --nx --batch --quiet -ex 'set confirm off' -ex "save gdb-index $DESTDIR" -ex quit 'ClientGUI' && test -f ClientGUI.gdb-index && objcopy --add-section '.gdb_index=ClientGUI.gdb-index' --set-section-flags '.gdb_index=readonly' 'ClientGUI' 'ClientGUI' && rm -f ClientGUI.gdb-index || true
+make[1] : on quitte le répertoire « /mnt/hgfs/shared/Cpp/tp4/ClientGUI »
+18:17:46 **** Incremental Build of configuration Debug for project source ****
+make all 
+make: rien à faire pour « all ».
+18:17:48 **** Incremental Build of project ClientGUI ****
+make debug 
+make -f Makefile.Debug
+make[1] : on entre dans le répertoire « /mnt/hgfs/shared/Cpp/tp4/ClientGUI »
+make[1]: rien à faire pour « first ».
+make[1] : on quitte le répertoire « /mnt/hgfs/shared/Cpp/tp4/ClientGUI »
+18:26:28 **** Incremental Build of configuration Debug for project source ****
+make all 
+make: rien à faire pour « all ».
+18:26:31 **** Incremental Build of configuration Debug for project Testeurs ****
+make all 
+make: rien à faire pour « all ».
+18:26:31 **** Incremental Build of project ClientGUI ****
+make debug 
+make -f Makefile.Debug
+make[1] : on entre dans le répertoire « /mnt/hgfs/shared/Cpp/tp4/ClientGUI »
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../source -Idebug -I. -o debug/clientgui.o clientgui.cpp
+g++  -o ClientGUI debug/ajoutchequeinterface.o debug/main.o debug/clientgui.o debug/moc_ajoutchequeinterface.o debug/moc_clientgui.o    -L/usr/lib/i386-linux-gnu ../source/Debug/libsource.a -lQtGui -lQtCore -lpthread 
+{ test -n "" && DESTDIR="" || DESTDIR=.; } && test $(gdb --version | sed -e 's,[^0-9][^0-9]*\([0-9]\)\.\([0-9]\).*,\1\2,;q') -gt 72 && gdb --nx --batch --quiet -ex 'set confirm off' -ex "save gdb-index $DESTDIR" -ex quit 'ClientGUI' && test -f ClientGUI.gdb-index && objcopy --add-section '.gdb_index=ClientGUI.gdb-index' --set-section-flags '.gdb_index=readonly' 'ClientGUI' 'ClientGUI' && rm -f ClientGUI.gdb-index || true
+make[1] : on quitte le répertoire « /mnt/hgfs/shared/Cpp/tp4/ClientGUI »
+18:26:48 **** Incremental Build of configuration Debug for project source ****
+make all 
+make: rien à faire pour « all ».
+18:26:50 **** Incremental Build of configuration Debug for project Testeurs ****
+make all 
+make: rien à faire pour « all ».
+18:26:51 **** Incremental Build of project ClientGUI ****
+make debug 
+make -f Makefile.Debug
+make[1] : on entre dans le répertoire « /mnt/hgfs/shared/Cpp/tp4/ClientGUI »
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../source -Idebug -I. -o debug/clientgui.o clientgui.cpp
+clientgui.cpp: In member function ‘void ClientGUI::ajoutCheque(int, double, double, int, double, const string&)’:
+clientgui.cpp:37:19: error: ‘CompteDejaPresentException’ in namespace ‘banque’ does not name a type
+  } catch (banque::CompteDejaPresentException e)
+                   ^
+Makefile.Debug:187 : la recette pour la cible « debug/clientgui.o » a échouée
+make[1] : on quitte le répertoire « /mnt/hgfs/shared/Cpp/tp4/ClientGUI »
+make[1]: *** [debug/clientgui.o] Erreur 1
+make: *** [debug] Erreur 2
+Makefile:50 : la recette pour la cible « debug » a échouée
+18:27:04 **** Incremental Build of configuration Debug for project source ****
+make all 
+make: rien à faire pour « all ».
+18:27:07 **** Incremental Build of configuration Debug for project Testeurs ****
+make all 
+make: rien à faire pour « all ».
+18:27:07 **** Incremental Build of project ClientGUI ****
+make debug 
+make -f Makefile.Debug
+make[1] : on entre dans le répertoire « /mnt/hgfs/shared/Cpp/tp4/ClientGUI »
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../source -Idebug -I. -o debug/clientgui.o clientgui.cpp
+g++  -o ClientGUI debug/ajoutchequeinterface.o debug/main.o debug/clientgui.o debug/moc_ajoutchequeinterface.o debug/moc_clientgui.o    -L/usr/lib/i386-linux-gnu ../source/Debug/libsource.a -lQtGui -lQtCore -lpthread 
+{ test -n "" && DESTDIR="" || DESTDIR=.; } && test $(gdb --version | sed -e 's,[^0-9][^0-9]*\([0-9]\)\.\([0-9]\).*,\1\2,;q') -gt 72 && gdb --nx --batch --quiet -ex 'set confirm off' -ex "save gdb-index $DESTDIR" -ex quit 'ClientGUI' && test -f ClientGUI.gdb-index && objcopy --add-section '.gdb_index=ClientGUI.gdb-index' --set-section-flags '.gdb_index=readonly' 'ClientGUI' 'ClientGUI' && rm -f ClientGUI.gdb-index || true
+make[1] : on quitte le répertoire « /mnt/hgfs/shared/Cpp/tp4/ClientGUI »
+18:28:20 **** Incremental Build of configuration Debug for project source ****
+make all 
+make: rien à faire pour « all ».
+18:28:22 **** Incremental Build of configuration Debug for project Testeurs ****
+make all 
+make: rien à faire pour « all ».
+18:28:23 **** Incremental Build of project ClientGUI ****
+make debug 
+make -f Makefile.Debug
+make[1] : on entre dans le répertoire « /mnt/hgfs/shared/Cpp/tp4/ClientGUI »
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../source -Idebug -I. -o debug/clientgui.o clientgui.cpp
+clientgui.cpp: In member function ‘void ClientGUI::ajoutCheque(int, double, double, int, double, const string&)’:
+clientgui.cpp:40:3: error: ‘QMessageBox’ has not been declared
+   QMessageBox::information(this, "Erreur", message);
+   ^
+Makefile.Debug:187 : la recette pour la cible « debug/clientgui.o » a échouée
+make[1] : on quitte le répertoire « /mnt/hgfs/shared/Cpp/tp4/ClientGUI »
+make[1]: *** [debug/clientgui.o] Erreur 1
+make: *** [debug] Erreur 2
+Makefile:50 : la recette pour la cible « debug » a échouée
+18:28:40 **** Incremental Build of configuration Debug for project source ****
+make all 
+make: rien à faire pour « all ».
+18:28:42 **** Incremental Build of configuration Debug for project Testeurs ****
+make all 
+make: rien à faire pour « all ».
+18:28:43 **** Incremental Build of project ClientGUI ****
+make debug 
+make -f Makefile.Debug
+make[1] : on entre dans le répertoire « /mnt/hgfs/shared/Cpp/tp4/ClientGUI »
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../source -Idebug -I. -o debug/clientgui.o clientgui.cpp
+g++  -o ClientGUI debug/ajoutchequeinterface.o debug/main.o debug/clientgui.o debug/moc_ajoutchequeinterface.o debug/moc_clientgui.o    -L/usr/lib/i386-linux-gnu ../source/Debug/libsource.a -lQtGui -lQtCore -lpthread 
+{ test -n "" && DESTDIR="" || DESTDIR=.; } && test $(gdb --version | sed -e 's,[^0-9][^0-9]*\([0-9]\)\.\([0-9]\).*,\1\2,;q') -gt 72 && gdb --nx --batch --quiet -ex 'set confirm off' -ex "save gdb-index $DESTDIR" -ex quit 'ClientGUI' && test -f ClientGUI.gdb-index && objcopy --add-section '.gdb_index=ClientGUI.gdb-index' --set-section-flags '.gdb_index=readonly' 'ClientGUI' 'ClientGUI' && rm -f ClientGUI.gdb-index || true
+make[1] : on quitte le répertoire « /mnt/hgfs/shared/Cpp/tp4/ClientGUI »
+18:28:57 **** Incremental Build of configuration Debug for project source ****
+make all 
+make: rien à faire pour « all ».
+18:28:59 **** Incremental Build of project ClientGUI ****
+make debug 
+make -f Makefile.Debug
+make[1] : on entre dans le répertoire « /mnt/hgfs/shared/Cpp/tp4/ClientGUI »
+make[1]: rien à faire pour « first ».
+make[1] : on quitte le répertoire « /mnt/hgfs/shared/Cpp/tp4/ClientGUI »
+18:34:23 **** Incremental Build of configuration Debug for project source ****
+make all 
+make: rien à faire pour « all ».
+18:34:25 **** Incremental Build of configuration Debug for project Testeurs ****
+make all 
+make: rien à faire pour « all ».
+18:34:26 **** Incremental Build of project ClientGUI ****
+make debug 
+make -f Makefile.Debug
+make[1] : on entre dans le répertoire « /mnt/hgfs/shared/Cpp/tp4/ClientGUI »
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../source -Idebug -I. -o debug/main.o main.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../source -Idebug -I. -o debug/clientgui.o clientgui.cpp
+/usr/lib/i386-linux-gnu/qt4/bin/moc -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../source -Idebug -I. clientgui.h -o debug/moc_clientgui.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../source -Idebug -I. -o debug/moc_clientgui.o debug/moc_clientgui.cpp
+g++  -o ClientGUI debug/ajoutchequeinterface.o debug/main.o debug/clientgui.o debug/moc_ajoutchequeinterface.o debug/moc_clientgui.o    -L/usr/lib/i386-linux-gnu ../source/Debug/libsource.a -lQtGui -lQtCore -lpthread 
+{ test -n "" && DESTDIR="" || DESTDIR=.; } && test $(gdb --version | sed -e 's,[^0-9][^0-9]*\([0-9]\)\.\([0-9]\).*,\1\2,;q') -gt 72 && gdb --nx --batch --quiet -ex 'set confirm off' -ex "save gdb-index $DESTDIR" -ex quit 'ClientGUI' && test -f ClientGUI.gdb-index && objcopy --add-section '.gdb_index=ClientGUI.gdb-index' --set-section-flags '.gdb_index=readonly' 'ClientGUI' 'ClientGUI' && rm -f ClientGUI.gdb-index || true
+make[1] : on quitte le répertoire « /mnt/hgfs/shared/Cpp/tp4/ClientGUI »
+18:35:10 **** Incremental Build of configuration Debug for project source ****
+make all 
+make: rien à faire pour « all ».
+18:35:12 **** Incremental Build of configuration Debug for project Testeurs ****
+make all 
+make: rien à faire pour « all ».
+18:35:12 **** Incremental Build of project ClientGUI ****
+make debug 
+make -f Makefile.Debug
+make[1] : on entre dans le répertoire « /mnt/hgfs/shared/Cpp/tp4/ClientGUI »
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../source -Idebug -I. -o debug/clientgui.o clientgui.cpp
+g++  -o ClientGUI debug/ajoutchequeinterface.o debug/main.o debug/clientgui.o debug/moc_ajoutchequeinterface.o debug/moc_clientgui.o    -L/usr/lib/i386-linux-gnu ../source/Debug/libsource.a -lQtGui -lQtCore -lpthread 
+{ test -n "" && DESTDIR="" || DESTDIR=.; } && test $(gdb --version | sed -e 's,[^0-9][^0-9]*\([0-9]\)\.\([0-9]\).*,\1\2,;q') -gt 72 && gdb --nx --batch --quiet -ex 'set confirm off' -ex "save gdb-index $DESTDIR" -ex quit 'ClientGUI' && test -f ClientGUI.gdb-index && objcopy --add-section '.gdb_index=ClientGUI.gdb-index' --set-section-flags '.gdb_index=readonly' 'ClientGUI' 'ClientGUI' && rm -f ClientGUI.gdb-index || true
+make[1] : on quitte le répertoire « /mnt/hgfs/shared/Cpp/tp4/ClientGUI »
+18:35:37 **** Incremental Build of configuration Debug for project source ****
+make all 
+make: rien à faire pour « all ».
+18:35:39 **** Incremental Build of configuration Debug for project Testeurs ****
+make all 
+make: rien à faire pour « all ».
+18:35:40 **** Incremental Build of project ClientGUI ****
+make debug 
+make -f Makefile.Debug
+make[1] : on entre dans le répertoire « /mnt/hgfs/shared/Cpp/tp4/ClientGUI »
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../source -Idebug -I. -o debug/clientgui.o clientgui.cpp
+g++  -o ClientGUI debug/ajoutchequeinterface.o debug/main.o debug/clientgui.o debug/moc_ajoutchequeinterface.o debug/moc_clientgui.o    -L/usr/lib/i386-linux-gnu ../source/Debug/libsource.a -lQtGui -lQtCore -lpthread 
+{ test -n "" && DESTDIR="" || DESTDIR=.; } && test $(gdb --version | sed -e 's,[^0-9][^0-9]*\([0-9]\)\.\([0-9]\).*,\1\2,;q') -gt 72 && gdb --nx --batch --quiet -ex 'set confirm off' -ex "save gdb-index $DESTDIR" -ex quit 'ClientGUI' && test -f ClientGUI.gdb-index && objcopy --add-section '.gdb_index=ClientGUI.gdb-index' --set-section-flags '.gdb_index=readonly' 'ClientGUI' 'ClientGUI' && rm -f ClientGUI.gdb-index || true
+make[1] : on quitte le répertoire « /mnt/hgfs/shared/Cpp/tp4/ClientGUI »
+18:35:46 **** Incremental Build of configuration Debug for project source ****
+make all 
+make: rien à faire pour « all ».
+18:35:48 **** Incremental Build of project ClientGUI ****
+make debug 
+make -f Makefile.Debug
+make[1] : on entre dans le répertoire « /mnt/hgfs/shared/Cpp/tp4/ClientGUI »
+make[1]: rien à faire pour « first ».
+make[1] : on quitte le répertoire « /mnt/hgfs/shared/Cpp/tp4/ClientGUI »
+18:36:32 **** Incremental Build of configuration Debug for project source ****
+make all 
+make: rien à faire pour « all ».
+18:36:34 **** Incremental Build of project ClientGUI ****
+make debug 
+make -f Makefile.Debug
+make[1] : on entre dans le répertoire « /mnt/hgfs/shared/Cpp/tp4/ClientGUI »
+make[1]: rien à faire pour « first ».
+make[1] : on quitte le répertoire « /mnt/hgfs/shared/Cpp/tp4/ClientGUI »
+18:39:49 **** Incremental Build of configuration Debug for project source ****
+make all 
+make: rien à faire pour « all ».
+18:39:51 **** Incremental Build of configuration Debug for project Testeurs ****
+make all 
+make: rien à faire pour « all ».
+18:39:51 **** Incremental Build of project ClientGUI ****
+make debug 
+make -f Makefile.Debug
+make[1] : on entre dans le répertoire « /mnt/hgfs/shared/Cpp/tp4/ClientGUI »
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../source -Idebug -I. -o debug/clientgui.o clientgui.cpp
+g++  -o ClientGUI debug/ajoutchequeinterface.o debug/main.o debug/clientgui.o debug/moc_ajoutchequeinterface.o debug/moc_clientgui.o    -L/usr/lib/i386-linux-gnu ../source/Debug/libsource.a -lQtGui -lQtCore -lpthread 
+{ test -n "" && DESTDIR="" || DESTDIR=.; } && test $(gdb --version | sed -e 's,[^0-9][^0-9]*\([0-9]\)\.\([0-9]\).*,\1\2,;q') -gt 72 && gdb --nx --batch --quiet -ex 'set confirm off' -ex "save gdb-index $DESTDIR" -ex quit 'ClientGUI' && test -f ClientGUI.gdb-index && objcopy --add-section '.gdb_index=ClientGUI.gdb-index' --set-section-flags '.gdb_index=readonly' 'ClientGUI' 'ClientGUI' && rm -f ClientGUI.gdb-index || true
+make[1] : on quitte le répertoire « /mnt/hgfs/shared/Cpp/tp4/ClientGUI »
+18:39:57 **** Incremental Build of configuration Debug for project source ****
+make all 
+make: rien à faire pour « all ».
+18:39:59 **** Incremental Build of project ClientGUI ****
+make debug 
+make -f Makefile.Debug
+make[1] : on entre dans le répertoire « /mnt/hgfs/shared/Cpp/tp4/ClientGUI »
+make[1]: rien à faire pour « first ».
+make[1] : on quitte le répertoire « /mnt/hgfs/shared/Cpp/tp4/ClientGUI »
+18:41:21 **** Incremental Build of configuration Debug for project source ****
+make all 
+make: rien à faire pour « all ».
+18:41:24 **** Incremental Build of configuration Debug for project Testeurs ****
+make all 
+make: rien à faire pour « all ».
+18:41:24 **** Incremental Build of project ClientGUI ****
+make debug 
+make -f Makefile.Debug
+make[1] : on entre dans le répertoire « /mnt/hgfs/shared/Cpp/tp4/ClientGUI »
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../source -Idebug -I. -o debug/clientgui.o clientgui.cpp
+g++  -o ClientGUI debug/ajoutchequeinterface.o debug/main.o debug/clientgui.o debug/moc_ajoutchequeinterface.o debug/moc_clientgui.o    -L/usr/lib/i386-linux-gnu ../source/Debug/libsource.a -lQtGui -lQtCore -lpthread 
+{ test -n "" && DESTDIR="" || DESTDIR=.; } && test $(gdb --version | sed -e 's,[^0-9][^0-9]*\([0-9]\)\.\([0-9]\).*,\1\2,;q') -gt 72 && gdb --nx --batch --quiet -ex 'set confirm off' -ex "save gdb-index $DESTDIR" -ex quit 'ClientGUI' && test -f ClientGUI.gdb-index && objcopy --add-section '.gdb_index=ClientGUI.gdb-index' --set-section-flags '.gdb_index=readonly' 'ClientGUI' 'ClientGUI' && rm -f ClientGUI.gdb-index || true
+make[1] : on quitte le répertoire « /mnt/hgfs/shared/Cpp/tp4/ClientGUI »
+18:41:29 **** Incremental Build of configuration Debug for project source ****
+make all 
+make: rien à faire pour « all ».
+18:41:30 **** Incremental Build of project ClientGUI ****
+make debug 
+make -f Makefile.Debug
+make[1] : on entre dans le répertoire « /mnt/hgfs/shared/Cpp/tp4/ClientGUI »
+make[1]: rien à faire pour « first ».
+make[1] : on quitte le répertoire « /mnt/hgfs/shared/Cpp/tp4/ClientGUI »
+18:42:30 **** Incremental Build of configuration Debug for project source ****
+make all 
+make: rien à faire pour « all ».
+18:42:33 **** Incremental Build of configuration Debug for project Testeurs ****
+make all 
+make: rien à faire pour « all ».
+18:42:33 **** Incremental Build of project ClientGUI ****
+make debug 
+make -f Makefile.Debug
+make[1] : on entre dans le répertoire « /mnt/hgfs/shared/Cpp/tp4/ClientGUI »
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../source -Idebug -I. -o debug/clientgui.o clientgui.cpp
+clientgui.cpp: In member function ‘void ClientGUI::ajoutCheque(int, double, double, int, double, const string&)’:
+clientgui.cpp:39:34: error: ‘endl’ was not declared in this scope
+   std::cout << "ajouter compte"<<endl;
+                                  ^
+clientgui.cpp:39:34: note: suggested alternative:
+In file included from /usr/include/c++/5/iterator:64:0,
+                 from /usr/include/qt4/QtCore/qlist.h:50,
+                 from /usr/include/qt4/QtCore/qobject.h:50,
+                 from /usr/include/qt4/QtGui/qwidget.h:47,
+                 from /usr/include/qt4/QtGui/qmainwindow.h:45,
+                 from /usr/include/qt4/QtGui/QMainWindow:1,
+                 from clientgui.h:4,
+                 from clientgui.cpp:1:
+/usr/include/c++/5/ostream:590:5: note:   ‘std::endl’
+     endl(basic_ostream<_CharT, _Traits>& __os)
+     ^
+clientgui.cpp:50:24: error: ‘endl’ was not declared in this scope
+   std::cout<<"Erreur"<<endl;
+                        ^
+clientgui.cpp:50:24: note: suggested alternative:
+In file included from /usr/include/c++/5/iterator:64:0,
+                 from /usr/include/qt4/QtCore/qlist.h:50,
+                 from /usr/include/qt4/QtCore/qobject.h:50,
+                 from /usr/include/qt4/QtGui/qwidget.h:47,
+                 from /usr/include/qt4/QtGui/qmainwindow.h:45,
+                 from /usr/include/qt4/QtGui/QMainWindow:1,
+                 from clientgui.h:4,
+                 from clientgui.cpp:1:
+/usr/include/c++/5/ostream:590:5: note:   ‘std::endl’
+     endl(basic_ostream<_CharT, _Traits>& __os)
+     ^
+Makefile.Debug:187 : la recette pour la cible « debug/clientgui.o » a échouée
+make[1] : on quitte le répertoire « /mnt/hgfs/shared/Cpp/tp4/ClientGUI »
+make[1]: *** [debug/clientgui.o] Erreur 1
+make: *** [debug] Erreur 2
+Makefile:50 : la recette pour la cible « debug » a échouée
+18:42:47 **** Incremental Build of configuration Debug for project source ****
+make all 
+make: rien à faire pour « all ».
+18:42:50 **** Incremental Build of configuration Debug for project Testeurs ****
+make all 
+make: rien à faire pour « all ».
+18:42:50 **** Incremental Build of project ClientGUI ****
+make debug 
+make -f Makefile.Debug
+make[1] : on entre dans le répertoire « /mnt/hgfs/shared/Cpp/tp4/ClientGUI »
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../source -Idebug -I. -o debug/clientgui.o clientgui.cpp
+g++  -o ClientGUI debug/ajoutchequeinterface.o debug/main.o debug/clientgui.o debug/moc_ajoutchequeinterface.o debug/moc_clientgui.o    -L/usr/lib/i386-linux-gnu ../source/Debug/libsource.a -lQtGui -lQtCore -lpthread 
+{ test -n "" && DESTDIR="" || DESTDIR=.; } && test $(gdb --version | sed -e 's,[^0-9][^0-9]*\([0-9]\)\.\([0-9]\).*,\1\2,;q') -gt 72 && gdb --nx --batch --quiet -ex 'set confirm off' -ex "save gdb-index $DESTDIR" -ex quit 'ClientGUI' && test -f ClientGUI.gdb-index && objcopy --add-section '.gdb_index=ClientGUI.gdb-index' --set-section-flags '.gdb_index=readonly' 'ClientGUI' 'ClientGUI' && rm -f ClientGUI.gdb-index || true
+make[1] : on quitte le répertoire « /mnt/hgfs/shared/Cpp/tp4/ClientGUI »
+18:42:57 **** Incremental Build of configuration Debug for project source ****
+make all 
+make: rien à faire pour « all ».
+18:42:59 **** Incremental Build of project ClientGUI ****
+make debug 
+make -f Makefile.Debug
+make[1] : on entre dans le répertoire « /mnt/hgfs/shared/Cpp/tp4/ClientGUI »
+make[1]: rien à faire pour « first ».
+make[1] : on quitte le répertoire « /mnt/hgfs/shared/Cpp/tp4/ClientGUI »
+18:44:04 **** Incremental Build of configuration Debug for project source ****
+make all 
+make: rien à faire pour « all ».
+18:44:07 **** Incremental Build of configuration Debug for project Testeurs ****
+make all 
+make: rien à faire pour « all ».
+18:44:07 **** Incremental Build of project ClientGUI ****
+make debug 
+make -f Makefile.Debug
+make[1] : on entre dans le répertoire « /mnt/hgfs/shared/Cpp/tp4/ClientGUI »
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../source -Idebug -I. -o debug/clientgui.o clientgui.cpp
+g++  -o ClientGUI debug/ajoutchequeinterface.o debug/main.o debug/clientgui.o debug/moc_ajoutchequeinterface.o debug/moc_clientgui.o    -L/usr/lib/i386-linux-gnu ../source/Debug/libsource.a -lQtGui -lQtCore -lpthread 
+{ test -n "" && DESTDIR="" || DESTDIR=.; } && test $(gdb --version | sed -e 's,[^0-9][^0-9]*\([0-9]\)\.\([0-9]\).*,\1\2,;q') -gt 72 && gdb --nx --batch --quiet -ex 'set confirm off' -ex "save gdb-index $DESTDIR" -ex quit 'ClientGUI' && test -f ClientGUI.gdb-index && objcopy --add-section '.gdb_index=ClientGUI.gdb-index' --set-section-flags '.gdb_index=readonly' 'ClientGUI' 'ClientGUI' && rm -f ClientGUI.gdb-index || true
+make[1] : on quitte le répertoire « /mnt/hgfs/shared/Cpp/tp4/ClientGUI »
+18:44:15 **** Incremental Build of configuration Debug for project source ****
+make all 
+make: rien à faire pour « all ».
+18:44:17 **** Incremental Build of project ClientGUI ****
+make debug 
+make -f Makefile.Debug
+make[1] : on entre dans le répertoire « /mnt/hgfs/shared/Cpp/tp4/ClientGUI »
+make[1]: rien à faire pour « first ».
+make[1] : on quitte le répertoire « /mnt/hgfs/shared/Cpp/tp4/ClientGUI »
+18:46:39 **** Incremental Build of configuration Debug for project source ****
+make all 
+make: rien à faire pour « all ».
+18:46:41 **** Incremental Build of configuration Debug for project Testeurs ****
+make all 
+make: rien à faire pour « all ».
+18:46:41 **** Incremental Build of project ClientGUI ****
+make debug 
+make -f Makefile.Debug
+make[1] : on entre dans le répertoire « /mnt/hgfs/shared/Cpp/tp4/ClientGUI »
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../source -Idebug -I. -o debug/clientgui.o clientgui.cpp
+g++  -o ClientGUI debug/ajoutchequeinterface.o debug/main.o debug/clientgui.o debug/moc_ajoutchequeinterface.o debug/moc_clientgui.o    -L/usr/lib/i386-linux-gnu ../source/Debug/libsource.a -lQtGui -lQtCore -lpthread 
+{ test -n "" && DESTDIR="" || DESTDIR=.; } && test $(gdb --version | sed -e 's,[^0-9][^0-9]*\([0-9]\)\.\([0-9]\).*,\1\2,;q') -gt 72 && gdb --nx --batch --quiet -ex 'set confirm off' -ex "save gdb-index $DESTDIR" -ex quit 'ClientGUI' && test -f ClientGUI.gdb-index && objcopy --add-section '.gdb_index=ClientGUI.gdb-index' --set-section-flags '.gdb_index=readonly' 'ClientGUI' 'ClientGUI' && rm -f ClientGUI.gdb-index || true
+make[1] : on quitte le répertoire « /mnt/hgfs/shared/Cpp/tp4/ClientGUI »
+18:46:47 **** Incremental Build of configuration Debug for project source ****
+make all 
+make: rien à faire pour « all ».
+18:46:48 **** Incremental Build of project ClientGUI ****
+make debug 
+make -f Makefile.Debug
+make[1] : on entre dans le répertoire « /mnt/hgfs/shared/Cpp/tp4/ClientGUI »
+make[1]: rien à faire pour « first ».
+make[1] : on quitte le répertoire « /mnt/hgfs/shared/Cpp/tp4/ClientGUI »
+18:50:02 **** Incremental Build of configuration Debug for project source ****
+make all 
+Building file: ../Client.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++03 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Client.d" -MT"Client.o" -o "Client.o" "../Client.cpp"
+Finished building: ../Client.cpp
+ 
+Building file: ../Compte.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++03 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Compte.d" -MT"Compte.o" -o "Compte.o" "../Compte.cpp"
+Finished building: ../Compte.cpp
+ 
+Building target: libsource.a
+Invoking: GCC Archiver
+ar -r  "libsource.a"  ./Cheque.o ./Client.o ./Compte.o ./CompteException.o ./ContratException.o ./Date.o ./Epargne.o ./validationFormat.o   
+ar: création de libsource.a
+Finished building target: libsource.a
+ 
+18:50:06 **** Incremental Build of configuration Debug for project Testeurs ****
+make all 
+Building target: Testeurs
+Invoking: GCC C++ Linker
+g++ -L"/mnt/hgfs/shared/Cpp/tp4/source/Debug" -o "Testeurs"  ./ChequeTesteur.o ./ClientTesteur.o ./CompteTesteur.o ./EpargneTesteur.o   -lsource -lgtest_main -lgtest -lpthread
+Finished building target: Testeurs
+ 
+18:50:08 **** Incremental Build of project ClientGUI ****
+make debug 
+make -f Makefile.Debug
+make[1] : on entre dans le répertoire « /mnt/hgfs/shared/Cpp/tp4/ClientGUI »
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../source -Idebug -I. -o debug/clientgui.o clientgui.cpp
+clientgui.cpp: In member function ‘void ClientGUI::ajoutCheque(int, double, double, int, double, const string&)’:
+clientgui.cpp:43:51: error: ‘endl’ was not declared in this scope
+   std::cout << compteCheque.reqCompteFormate() << endl;
+                                                   ^
+clientgui.cpp:43:51: note: suggested alternative:
+In file included from /usr/include/c++/5/iterator:64:0,
+                 from /usr/include/qt4/QtCore/qlist.h:50,
+                 from /usr/include/qt4/QtCore/qobject.h:50,
+                 from /usr/include/qt4/QtGui/qwidget.h:47,
+                 from /usr/include/qt4/QtGui/qmainwindow.h:45,
+                 from /usr/include/qt4/QtGui/QMainWindow:1,
+                 from clientgui.h:4,
+                 from clientgui.cpp:1:
+/usr/include/c++/5/ostream:590:5: note:   ‘std::endl’
+     endl(basic_ostream<_CharT, _Traits>& __os)
+     ^
+Makefile.Debug:187 : la recette pour la cible « debug/clientgui.o » a échouée
+make[1] : on quitte le répertoire « /mnt/hgfs/shared/Cpp/tp4/ClientGUI »
+make[1]: *** [debug/clientgui.o] Erreur 1
+make: *** [debug] Erreur 2
+Makefile:50 : la recette pour la cible « debug » a échouée
+18:50:11 **** Incremental Build of configuration Debug for project source ****
+make all 
+make: rien à faire pour « all ».
+18:50:13 **** Incremental Build of project ClientGUI ****
+make debug 
+make -f Makefile.Debug
+make[1] : on entre dans le répertoire « /mnt/hgfs/shared/Cpp/tp4/ClientGUI »
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../source -Idebug -I. -o debug/clientgui.o clientgui.cpp
+clientgui.cpp: In member function ‘void ClientGUI::ajoutCheque(int, double, double, int, double, const string&)’:
+clientgui.cpp:43:51: error: ‘endl’ was not declared in this scope
+   std::cout << compteCheque.reqCompteFormate() << endl;
+                                                   ^
+clientgui.cpp:43:51: note: suggested alternative:
+In file included from /usr/include/c++/5/iterator:64:0,
+                 from /usr/include/qt4/QtCore/qlist.h:50,
+                 from /usr/include/qt4/QtCore/qobject.h:50,
+                 from /usr/include/qt4/QtGui/qwidget.h:47,
+                 from /usr/include/qt4/QtGui/qmainwindow.h:45,
+                 from /usr/include/qt4/QtGui/QMainWindow:1,
+                 from clientgui.h:4,
+                 from clientgui.cpp:1:
+/usr/include/c++/5/ostream:590:5: note:   ‘std::endl’
+     endl(basic_ostream<_CharT, _Traits>& __os)
+     ^
+Makefile.Debug:187 : la recette pour la cible « debug/clientgui.o » a échouée
+make[1] : on quitte le répertoire « /mnt/hgfs/shared/Cpp/tp4/ClientGUI »
+make[1]: *** [debug/clientgui.o] Erreur 1
+make: *** [debug] Erreur 2
+Makefile:50 : la recette pour la cible « debug » a échouée
+18:50:27 **** Incremental Build of configuration Debug for project source ****
+make all 
+make: rien à faire pour « all ».
+18:50:29 **** Incremental Build of project ClientGUI ****
+make debug 
+make -f Makefile.Debug
+make[1] : on entre dans le répertoire « /mnt/hgfs/shared/Cpp/tp4/ClientGUI »
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../source -Idebug -I. -o debug/clientgui.o clientgui.cpp
+g++  -o ClientGUI debug/ajoutchequeinterface.o debug/main.o debug/clientgui.o debug/moc_ajoutchequeinterface.o debug/moc_clientgui.o    -L/usr/lib/i386-linux-gnu ../source/Debug/libsource.a -lQtGui -lQtCore -lpthread 
+{ test -n "" && DESTDIR="" || DESTDIR=.; } && test $(gdb --version | sed -e 's,[^0-9][^0-9]*\([0-9]\)\.\([0-9]\).*,\1\2,;q') -gt 72 && gdb --nx --batch --quiet -ex 'set confirm off' -ex "save gdb-index $DESTDIR" -ex quit 'ClientGUI' && test -f ClientGUI.gdb-index && objcopy --add-section '.gdb_index=ClientGUI.gdb-index' --set-section-flags '.gdb_index=readonly' 'ClientGUI' 'ClientGUI' && rm -f ClientGUI.gdb-index || true
+make[1] : on quitte le répertoire « /mnt/hgfs/shared/Cpp/tp4/ClientGUI »
+18:51:43 **** Incremental Build of configuration Debug for project source ****
+make all 
+make: rien à faire pour « all ».
+18:51:45 **** Incremental Build of configuration Debug for project Testeurs ****
+make all 
+make: rien à faire pour « all ».
+18:51:46 **** Incremental Build of project ClientGUI ****
+make debug 
+make -f Makefile.Debug
+make[1] : on entre dans le répertoire « /mnt/hgfs/shared/Cpp/tp4/ClientGUI »
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../source -Idebug -I. -o debug/clientgui.o clientgui.cpp
+g++  -o ClientGUI debug/ajoutchequeinterface.o debug/main.o debug/clientgui.o debug/moc_ajoutchequeinterface.o debug/moc_clientgui.o    -L/usr/lib/i386-linux-gnu ../source/Debug/libsource.a -lQtGui -lQtCore -lpthread 
+{ test -n "" && DESTDIR="" || DESTDIR=.; } && test $(gdb --version | sed -e 's,[^0-9][^0-9]*\([0-9]\)\.\([0-9]\).*,\1\2,;q') -gt 72 && gdb --nx --batch --quiet -ex 'set confirm off' -ex "save gdb-index $DESTDIR" -ex quit 'ClientGUI' && test -f ClientGUI.gdb-index && objcopy --add-section '.gdb_index=ClientGUI.gdb-index' --set-section-flags '.gdb_index=readonly' 'ClientGUI' 'ClientGUI' && rm -f ClientGUI.gdb-index || true
+make[1] : on quitte le répertoire « /mnt/hgfs/shared/Cpp/tp4/ClientGUI »
+18:51:51 **** Incremental Build of configuration Debug for project Testeurs ****
+make all 
+make: rien à faire pour « all ».
+19:04:46 **** Incremental Build of configuration Debug for project source ****
+make all 
+make: rien à faire pour « all ».
+19:04:48 **** Incremental Build of configuration Debug for project Testeurs ****
+make all 
+make: rien à faire pour « all ».
+19:04:49 **** Incremental Build of project ClientGUI ****
+make debug 
+make -f Makefile.Debug
+make[1] : on entre dans le répertoire « /mnt/hgfs/shared/Cpp/tp4/ClientGUI »
+/usr/lib/i386-linux-gnu/qt4/bin/uic clientgui.ui -o ui_clientgui.h
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../source -Idebug -I. -o debug/main.o main.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../source -Idebug -I. -o debug/clientgui.o clientgui.cpp
+/usr/lib/i386-linux-gnu/qt4/bin/moc -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../source -Idebug -I. clientgui.h -o debug/moc_clientgui.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../source -Idebug -I. -o debug/moc_clientgui.o debug/moc_clientgui.cpp
+g++  -o ClientGUI debug/ajoutchequeinterface.o debug/main.o debug/clientgui.o debug/moc_ajoutchequeinterface.o debug/moc_clientgui.o    -L/usr/lib/i386-linux-gnu ../source/Debug/libsource.a -lQtGui -lQtCore -lpthread 
+{ test -n "" && DESTDIR="" || DESTDIR=.; } && test $(gdb --version | sed -e 's,[^0-9][^0-9]*\([0-9]\)\.\([0-9]\).*,\1\2,;q') -gt 72 && gdb --nx --batch --quiet -ex 'set confirm off' -ex "save gdb-index $DESTDIR" -ex quit 'ClientGUI' && test -f ClientGUI.gdb-index && objcopy --add-section '.gdb_index=ClientGUI.gdb-index' --set-section-flags '.gdb_index=readonly' 'ClientGUI' 'ClientGUI' && rm -f ClientGUI.gdb-index || true
+make[1] : on quitte le répertoire « /mnt/hgfs/shared/Cpp/tp4/ClientGUI »
+19:06:53 **** Incremental Build of configuration Debug for project source ****
+make all 
+make: rien à faire pour « all ».
+19:06:55 **** Incremental Build of configuration Debug for project Testeurs ****
+make all 
+make: rien à faire pour « all ».
+19:06:56 **** Incremental Build of project ClientGUI ****
+make debug 
+make -f Makefile.Debug
+make[1] : on entre dans le répertoire « /mnt/hgfs/shared/Cpp/tp4/ClientGUI »
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../source -Idebug -I. -o debug/clientgui.o clientgui.cpp
+g++  -o ClientGUI debug/ajoutchequeinterface.o debug/main.o debug/clientgui.o debug/moc_ajoutchequeinterface.o debug/moc_clientgui.o    -L/usr/lib/i386-linux-gnu ../source/Debug/libsource.a -lQtGui -lQtCore -lpthread 
+{ test -n "" && DESTDIR="" || DESTDIR=.; } && test $(gdb --version | sed -e 's,[^0-9][^0-9]*\([0-9]\)\.\([0-9]\).*,\1\2,;q') -gt 72 && gdb --nx --batch --quiet -ex 'set confirm off' -ex "save gdb-index $DESTDIR" -ex quit 'ClientGUI' && test -f ClientGUI.gdb-index && objcopy --add-section '.gdb_index=ClientGUI.gdb-index' --set-section-flags '.gdb_index=readonly' 'ClientGUI' 'ClientGUI' && rm -f ClientGUI.gdb-index || true
+make[1] : on quitte le répertoire « /mnt/hgfs/shared/Cpp/tp4/ClientGUI »
+19:07:00 **** Incremental Build of configuration Debug for project source ****
+make all 
+make: rien à faire pour « all ».
+19:07:02 **** Incremental Build of project ClientGUI ****
+make debug 
+make -f Makefile.Debug
+make[1] : on entre dans le répertoire « /mnt/hgfs/shared/Cpp/tp4/ClientGUI »
+make[1]: rien à faire pour « first ».
+make[1] : on quitte le répertoire « /mnt/hgfs/shared/Cpp/tp4/ClientGUI »
+19:12:28 **** Incremental Build of configuration Debug for project source ****
+make all 
+make: rien à faire pour « all ».
+19:12:30 **** Incremental Build of project ClientGUI ****
+make debug 
+make -f Makefile.Debug
+make[1] : on entre dans le répertoire « /mnt/hgfs/shared/Cpp/tp4/ClientGUI »
+/usr/lib/i386-linux-gnu/qt4/bin/uic clientgui.ui -o ui_clientgui.h
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../source -Idebug -I. -o debug/main.o main.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../source -Idebug -I. -o debug/clientgui.o clientgui.cpp
+/usr/lib/i386-linux-gnu/qt4/bin/moc -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../source -Idebug -I. clientgui.h -o debug/moc_clientgui.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../source -Idebug -I. -o debug/moc_clientgui.o debug/moc_clientgui.cpp
+g++  -o ClientGUI debug/ajoutchequeinterface.o debug/main.o debug/clientgui.o debug/moc_ajoutchequeinterface.o debug/moc_clientgui.o    -L/usr/lib/i386-linux-gnu ../source/Debug/libsource.a -lQtGui -lQtCore -lpthread 
+{ test -n "" && DESTDIR="" || DESTDIR=.; } && test $(gdb --version | sed -e 's,[^0-9][^0-9]*\([0-9]\)\.\([0-9]\).*,\1\2,;q') -gt 72 && gdb --nx --batch --quiet -ex 'set confirm off' -ex "save gdb-index $DESTDIR" -ex quit 'ClientGUI' && test -f ClientGUI.gdb-index && objcopy --add-section '.gdb_index=ClientGUI.gdb-index' --set-section-flags '.gdb_index=readonly' 'ClientGUI' 'ClientGUI' && rm -f ClientGUI.gdb-index || true
+make[1] : on quitte le répertoire « /mnt/hgfs/shared/Cpp/tp4/ClientGUI »
+19:15:11 **** Incremental Build of configuration Debug for project source ****
+make all 
+make: rien à faire pour « all ».
+19:15:13 **** Incremental Build of configuration Debug for project Testeurs ****
+make all 
+make: rien à faire pour « all ».
+19:15:13 **** Incremental Build of project ClientGUI ****
+make debug 
+make -f Makefile.Debug
+make[1] : on entre dans le répertoire « /mnt/hgfs/shared/Cpp/tp4/ClientGUI »
+/usr/lib/i386-linux-gnu/qt4/bin/uic ajoutchequeinterface.ui -o ui_ajoutchequeinterface.h
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../source -Idebug -I. -o debug/ajoutchequeinterface.o ajoutchequeinterface.cpp
+/usr/lib/i386-linux-gnu/qt4/bin/moc -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../source -Idebug -I. ajoutchequeinterface.h -o debug/moc_ajoutchequeinterface.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../source -Idebug -I. -o debug/moc_ajoutchequeinterface.o debug/moc_ajoutchequeinterface.cpp
+g++  -o ClientGUI debug/ajoutchequeinterface.o debug/main.o debug/clientgui.o debug/moc_ajoutchequeinterface.o debug/moc_clientgui.o    -L/usr/lib/i386-linux-gnu ../source/Debug/libsource.a -lQtGui -lQtCore -lpthread 
+{ test -n "" && DESTDIR="" || DESTDIR=.; } && test $(gdb --version | sed -e 's,[^0-9][^0-9]*\([0-9]\)\.\([0-9]\).*,\1\2,;q') -gt 72 && gdb --nx --batch --quiet -ex 'set confirm off' -ex "save gdb-index $DESTDIR" -ex quit 'ClientGUI' && test -f ClientGUI.gdb-index && objcopy --add-section '.gdb_index=ClientGUI.gdb-index' --set-section-flags '.gdb_index=readonly' 'ClientGUI' 'ClientGUI' && rm -f ClientGUI.gdb-index || true
+make[1] : on quitte le répertoire « /mnt/hgfs/shared/Cpp/tp4/ClientGUI »
+19:15:19 **** Incremental Build of configuration Debug for project source ****
+make all 
+make: rien à faire pour « all ».
+19:15:21 **** Incremental Build of project ClientGUI ****
+make debug 
+make -f Makefile.Debug
+make[1] : on entre dans le répertoire « /mnt/hgfs/shared/Cpp/tp4/ClientGUI »
+make[1]: rien à faire pour « first ».
+make[1] : on quitte le répertoire « /mnt/hgfs/shared/Cpp/tp4/ClientGUI »
+19:16:13 **** Incremental Build of configuration Debug for project source ****
+make all 
+make: rien à faire pour « all ».
+19:16:15 **** Incremental Build of project ClientGUI ****
+make debug 
+make -f Makefile.Debug
+make[1] : on entre dans le répertoire « /mnt/hgfs/shared/Cpp/tp4/ClientGUI »
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../source -Idebug -I. -o debug/clientgui.o clientgui.cpp
+g++  -o ClientGUI debug/ajoutchequeinterface.o debug/main.o debug/clientgui.o debug/moc_ajoutchequeinterface.o debug/moc_clientgui.o    -L/usr/lib/i386-linux-gnu ../source/Debug/libsource.a -lQtGui -lQtCore -lpthread 
+{ test -n "" && DESTDIR="" || DESTDIR=.; } && test $(gdb --version | sed -e 's,[^0-9][^0-9]*\([0-9]\)\.\([0-9]\).*,\1\2,;q') -gt 72 && gdb --nx --batch --quiet -ex 'set confirm off' -ex "save gdb-index $DESTDIR" -ex quit 'ClientGUI' && test -f ClientGUI.gdb-index && objcopy --add-section '.gdb_index=ClientGUI.gdb-index' --set-section-flags '.gdb_index=readonly' 'ClientGUI' 'ClientGUI' && rm -f ClientGUI.gdb-index || true
+make[1] : on quitte le répertoire « /mnt/hgfs/shared/Cpp/tp4/ClientGUI »
+19:17:42 **** Incremental Build of configuration Debug for project source ****
+make all 
+make: rien à faire pour « all ».
+19:17:44 **** Incremental Build of project ClientGUI ****
+make debug 
+make -f Makefile.Debug
+make[1] : on entre dans le répertoire « /mnt/hgfs/shared/Cpp/tp4/ClientGUI »
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../source -Idebug -I. -o debug/clientgui.o clientgui.cpp
+g++  -o ClientGUI debug/ajoutchequeinterface.o debug/main.o debug/clientgui.o debug/moc_ajoutchequeinterface.o debug/moc_clientgui.o    -L/usr/lib/i386-linux-gnu ../source/Debug/libsource.a -lQtGui -lQtCore -lpthread 
+{ test -n "" && DESTDIR="" || DESTDIR=.; } && test $(gdb --version | sed -e 's,[^0-9][^0-9]*\([0-9]\)\.\([0-9]\).*,\1\2,;q') -gt 72 && gdb --nx --batch --quiet -ex 'set confirm off' -ex "save gdb-index $DESTDIR" -ex quit 'ClientGUI' && test -f ClientGUI.gdb-index && objcopy --add-section '.gdb_index=ClientGUI.gdb-index' --set-section-flags '.gdb_index=readonly' 'ClientGUI' 'ClientGUI' && rm -f ClientGUI.gdb-index || true
+make[1] : on quitte le répertoire « /mnt/hgfs/shared/Cpp/tp4/ClientGUI »
+19:20:16 **** Incremental Build of configuration Debug for project source ****
+make all 
+make: rien à faire pour « all ».
+19:20:18 **** Incremental Build of project ClientGUI ****
+make debug 
+make -f Makefile.Debug
+make[1] : on entre dans le répertoire « /mnt/hgfs/shared/Cpp/tp4/ClientGUI »
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../source -Idebug -I. -o debug/clientgui.o clientgui.cpp
+g++  -o ClientGUI debug/ajoutchequeinterface.o debug/main.o debug/clientgui.o debug/moc_ajoutchequeinterface.o debug/moc_clientgui.o    -L/usr/lib/i386-linux-gnu ../source/Debug/libsource.a -lQtGui -lQtCore -lpthread 
+{ test -n "" && DESTDIR="" || DESTDIR=.; } && test $(gdb --version | sed -e 's,[^0-9][^0-9]*\([0-9]\)\.\([0-9]\).*,\1\2,;q') -gt 72 && gdb --nx --batch --quiet -ex 'set confirm off' -ex "save gdb-index $DESTDIR" -ex quit 'ClientGUI' && test -f ClientGUI.gdb-index && objcopy --add-section '.gdb_index=ClientGUI.gdb-index' --set-section-flags '.gdb_index=readonly' 'ClientGUI' 'ClientGUI' && rm -f ClientGUI.gdb-index || true
+make[1] : on quitte le répertoire « /mnt/hgfs/shared/Cpp/tp4/ClientGUI »
+19:21:21 **** Incremental Build of configuration Debug for project source ****
+make all 
+make: rien à faire pour « all ».
+19:21:23 **** Incremental Build of configuration Debug for project Testeurs ****
+make all 
+make: rien à faire pour « all ».
+19:21:23 **** Incremental Build of project ClientGUI ****
+make debug 
+make -f Makefile.Debug
+make[1] : on entre dans le répertoire « /mnt/hgfs/shared/Cpp/tp4/ClientGUI »
+/usr/lib/i386-linux-gnu/qt4/bin/uic ajoutchequeinterface.ui -o ui_ajoutchequeinterface.h
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../source -Idebug -I. -o debug/ajoutchequeinterface.o ajoutchequeinterface.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../source -Idebug -I. -o debug/clientgui.o clientgui.cpp
+/usr/lib/i386-linux-gnu/qt4/bin/moc -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../source -Idebug -I. ajoutchequeinterface.h -o debug/moc_ajoutchequeinterface.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../source -Idebug -I. -o debug/moc_ajoutchequeinterface.o debug/moc_ajoutchequeinterface.cpp
+g++  -o ClientGUI debug/ajoutchequeinterface.o debug/main.o debug/clientgui.o debug/moc_ajoutchequeinterface.o debug/moc_clientgui.o    -L/usr/lib/i386-linux-gnu ../source/Debug/libsource.a -lQtGui -lQtCore -lpthread 
+{ test -n "" && DESTDIR="" || DESTDIR=.; } && test $(gdb --version | sed -e 's,[^0-9][^0-9]*\([0-9]\)\.\([0-9]\).*,\1\2,;q') -gt 72 && gdb --nx --batch --quiet -ex 'set confirm off' -ex "save gdb-index $DESTDIR" -ex quit 'ClientGUI' && test -f ClientGUI.gdb-index && objcopy --add-section '.gdb_index=ClientGUI.gdb-index' --set-section-flags '.gdb_index=readonly' 'ClientGUI' 'ClientGUI' && rm -f ClientGUI.gdb-index || true
+make[1] : on quitte le répertoire « /mnt/hgfs/shared/Cpp/tp4/ClientGUI »
+19:23:48 **** Incremental Build of configuration Debug for project source ****
+make all 
+make: rien à faire pour « all ».
+19:23:50 **** Incremental Build of configuration Debug for project Testeurs ****
+make all 
+make: rien à faire pour « all ».
+19:23:51 **** Incremental Build of project ClientGUI ****
+make debug 
+make -f Makefile.Debug
+make[1] : on entre dans le répertoire « /mnt/hgfs/shared/Cpp/tp4/ClientGUI »
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../source -Idebug -I. -o debug/clientgui.o clientgui.cpp
+g++  -o ClientGUI debug/ajoutchequeinterface.o debug/main.o debug/clientgui.o debug/moc_ajoutchequeinterface.o debug/moc_clientgui.o    -L/usr/lib/i386-linux-gnu ../source/Debug/libsource.a -lQtGui -lQtCore -lpthread 
+{ test -n "" && DESTDIR="" || DESTDIR=.; } && test $(gdb --version | sed -e 's,[^0-9][^0-9]*\([0-9]\)\.\([0-9]\).*,\1\2,;q') -gt 72 && gdb --nx --batch --quiet -ex 'set confirm off' -ex "save gdb-index $DESTDIR" -ex quit 'ClientGUI' && test -f ClientGUI.gdb-index && objcopy --add-section '.gdb_index=ClientGUI.gdb-index' --set-section-flags '.gdb_index=readonly' 'ClientGUI' 'ClientGUI' && rm -f ClientGUI.gdb-index || true
+make[1] : on quitte le répertoire « /mnt/hgfs/shared/Cpp/tp4/ClientGUI »
+19:35:36 **** Incremental Build of configuration Debug for project source ****
+make all 
+make: rien à faire pour « all ».
+19:35:38 **** Incremental Build of project ClientGUI ****
+make debug 
+make -f Makefile.Debug
+make[1] : on entre dans le répertoire « /mnt/hgfs/shared/Cpp/tp4/ClientGUI »
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../source -Idebug -I. -o debug/ajoutchequeinterface.o ajoutchequeinterface.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../source -Idebug -I. -o debug/clientgui.o clientgui.cpp
+g++  -o ClientGUI debug/ajoutchequeinterface.o debug/main.o debug/clientgui.o debug/moc_ajoutchequeinterface.o debug/moc_clientgui.o    -L/usr/lib/i386-linux-gnu ../source/Debug/libsource.a -lQtGui -lQtCore -lpthread 
+{ test -n "" && DESTDIR="" || DESTDIR=.; } && test $(gdb --version | sed -e 's,[^0-9][^0-9]*\([0-9]\)\.\([0-9]\).*,\1\2,;q') -gt 72 && gdb --nx --batch --quiet -ex 'set confirm off' -ex "save gdb-index $DESTDIR" -ex quit 'ClientGUI' && test -f ClientGUI.gdb-index && objcopy --add-section '.gdb_index=ClientGUI.gdb-index' --set-section-flags '.gdb_index=readonly' 'ClientGUI' 'ClientGUI' && rm -f ClientGUI.gdb-index || true
+make[1] : on quitte le répertoire « /mnt/hgfs/shared/Cpp/tp4/ClientGUI »
+19:37:16 **** Incremental Build of configuration Debug for project source ****
+make all 
+make: rien à faire pour « all ».
+19:37:18 **** Incremental Build of project ClientGUI ****
+make debug 
+make -f Makefile.Debug
+make[1] : on entre dans le répertoire « /mnt/hgfs/shared/Cpp/tp4/ClientGUI »
+/usr/lib/i386-linux-gnu/qt4/bin/uic clientgui.ui -o ui_clientgui.h
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../source -Idebug -I. -o debug/main.o main.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../source -Idebug -I. -o debug/clientgui.o clientgui.cpp
+/usr/lib/i386-linux-gnu/qt4/bin/moc -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../source -Idebug -I. clientgui.h -o debug/moc_clientgui.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../source -Idebug -I. -o debug/moc_clientgui.o debug/moc_clientgui.cpp
+g++  -o ClientGUI debug/ajoutchequeinterface.o debug/main.o debug/clientgui.o debug/moc_ajoutchequeinterface.o debug/moc_clientgui.o    -L/usr/lib/i386-linux-gnu ../source/Debug/libsource.a -lQtGui -lQtCore -lpthread 
+{ test -n "" && DESTDIR="" || DESTDIR=.; } && test $(gdb --version | sed -e 's,[^0-9][^0-9]*\([0-9]\)\.\([0-9]\).*,\1\2,;q') -gt 72 && gdb --nx --batch --quiet -ex 'set confirm off' -ex "save gdb-index $DESTDIR" -ex quit 'ClientGUI' && test -f ClientGUI.gdb-index && objcopy --add-section '.gdb_index=ClientGUI.gdb-index' --set-section-flags '.gdb_index=readonly' 'ClientGUI' 'ClientGUI' && rm -f ClientGUI.gdb-index || true
+make[1] : on quitte le répertoire « /mnt/hgfs/shared/Cpp/tp4/ClientGUI »
+19:39:24 **** Incremental Build of configuration Debug for project source ****
+make all 
+make: rien à faire pour « all ».
+19:39:26 **** Incremental Build of project ClientGUI ****
+make debug 
+make -f Makefile.Debug
+make[1] : on entre dans le répertoire « /mnt/hgfs/shared/Cpp/tp4/ClientGUI »
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../source -Idebug -I. -o debug/clientgui.o clientgui.cpp
+g++  -o ClientGUI debug/ajoutchequeinterface.o debug/main.o debug/clientgui.o debug/moc_ajoutchequeinterface.o debug/moc_clientgui.o    -L/usr/lib/i386-linux-gnu ../source/Debug/libsource.a -lQtGui -lQtCore -lpthread 
+{ test -n "" && DESTDIR="" || DESTDIR=.; } && test $(gdb --version | sed -e 's,[^0-9][^0-9]*\([0-9]\)\.\([0-9]\).*,\1\2,;q') -gt 72 && gdb --nx --batch --quiet -ex 'set confirm off' -ex "save gdb-index $DESTDIR" -ex quit 'ClientGUI' && test -f ClientGUI.gdb-index && objcopy --add-section '.gdb_index=ClientGUI.gdb-index' --set-section-flags '.gdb_index=readonly' 'ClientGUI' 'ClientGUI' && rm -f ClientGUI.gdb-index || true
+make[1] : on quitte le répertoire « /mnt/hgfs/shared/Cpp/tp4/ClientGUI »
+19:49:15 **** Incremental Build of configuration Debug for project source ****
+make all 
+make: rien à faire pour « all ».
+19:49:17 **** Incremental Build of project ClientGUI ****
+make debug 
+make -f Makefile.Debug
+make[1] : on entre dans le répertoire « /mnt/hgfs/shared/Cpp/tp4/ClientGUI »
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../source -Idebug -I. -o debug/clientgui.o clientgui.cpp
+g++  -o ClientGUI debug/ajoutchequeinterface.o debug/main.o debug/clientgui.o debug/moc_ajoutchequeinterface.o debug/moc_clientgui.o    -L/usr/lib/i386-linux-gnu ../source/Debug/libsource.a -lQtGui -lQtCore -lpthread 
+{ test -n "" && DESTDIR="" || DESTDIR=.; } && test $(gdb --version | sed -e 's,[^0-9][^0-9]*\([0-9]\)\.\([0-9]\).*,\1\2,;q') -gt 72 && gdb --nx --batch --quiet -ex 'set confirm off' -ex "save gdb-index $DESTDIR" -ex quit 'ClientGUI' && test -f ClientGUI.gdb-index && objcopy --add-section '.gdb_index=ClientGUI.gdb-index' --set-section-flags '.gdb_index=readonly' 'ClientGUI' 'ClientGUI' && rm -f ClientGUI.gdb-index || true
+make[1] : on quitte le répertoire « /mnt/hgfs/shared/Cpp/tp4/ClientGUI »
+19:54:55 **** Incremental Build of configuration Debug for project source ****
+make all 
+make: rien à faire pour « all ».
+19:54:57 **** Incremental Build of project ClientGUI ****
+make debug 
+make -f Makefile.Debug
+make[1] : on entre dans le répertoire « /mnt/hgfs/shared/Cpp/tp4/ClientGUI »
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../source -Idebug -I. -o debug/clientgui.o clientgui.cpp
+clientgui.cpp: In member function ‘void ClientGUI::ajoutCheque(int, double, double, int, double, const string&)’:
+clientgui.cpp:53:77: error: no matching function for call to ‘QTableWidgetItem::QTableWidgetItem(std::__cxx11::basic_stringstream<char>::__string_type)’
+   ui.tableWidget_comptes->setItem(rowCount, 0, new QTableWidgetItem(ss.str()));
+                                                                             ^
+In file included from /usr/include/qt4/QtGui/QTableWidget:1:0,
+                 from ui_clientgui.h:21,
+                 from clientgui.h:5,
+                 from clientgui.cpp:1:
+/usr/include/qt4/QtGui/qtablewidget.h:91:5: note: candidate: QTableWidgetItem::QTableWidgetItem(const QTableWidgetItem&)
+     QTableWidgetItem(const QTableWidgetItem &other);
+     ^
+/usr/include/qt4/QtGui/qtablewidget.h:91:5: note:   no known conversion for argument 1 from ‘std::__cxx11::basic_stringstream<char>::__string_type {aka std::__cxx11::basic_string<char>}’ to ‘const QTableWidgetItem&’
+/usr/include/qt4/QtGui/qtablewidget.h:90:14: note: candidate: QTableWidgetItem::QTableWidgetItem(const QIcon&, const QString&, int)
+     explicit QTableWidgetItem(const QIcon &icon, const QString &text, int type = Type);
+              ^
+/usr/include/qt4/QtGui/qtablewidget.h:90:14: note:   candidate expects 3 arguments, 1 provided
+/usr/include/qt4/QtGui/qtablewidget.h:89:14: note: candidate: QTableWidgetItem::QTableWidgetItem(const QString&, int)
+     explicit QTableWidgetItem(const QString &text, int type = Type);
+              ^
+/usr/include/qt4/QtGui/qtablewidget.h:89:14: note:   no known conversion for argument 1 from ‘std::__cxx11::basic_stringstream<char>::__string_type {aka std::__cxx11::basic_string<char>}’ to ‘const QString&’
+/usr/include/qt4/QtGui/qtablewidget.h:88:5: note: candidate: QTableWidgetItem::QTableWidgetItem(int)
+     QTableWidgetItem(int type = Type);
+     ^
+/usr/include/qt4/QtGui/qtablewidget.h:88:5: note:   no known conversion for argument 1 from ‘std::__cxx11::basic_stringstream<char>::__string_type {aka std::__cxx11::basic_string<char>}’ to ‘int’
+Makefile.Debug:187 : la recette pour la cible « debug/clientgui.o » a échouée
+make[1] : on quitte le répertoire « /mnt/hgfs/shared/Cpp/tp4/ClientGUI »
+make[1]: *** [debug/clientgui.o] Erreur 1
+make: *** [debug] Erreur 2
+Makefile:50 : la recette pour la cible « debug » a échouée
+20:04:14 **** Incremental Build of configuration Debug for project source ****
+make all 
+make: rien à faire pour « all ».
+20:04:17 **** Incremental Build of configuration Debug for project Testeurs ****
+make all 
+make: rien à faire pour « all ».
+20:04:17 **** Incremental Build of project ClientGUI ****
+make debug 
+make -f Makefile.Debug
+make[1] : on entre dans le répertoire « /mnt/hgfs/shared/Cpp/tp4/ClientGUI »
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../source -Idebug -I. -o debug/clientgui.o clientgui.cpp
+clientgui.cpp: In member function ‘void ClientGUI::ajoutCheque(int, double, double, int, double, const string&)’:
+clientgui.cpp:53:6: error: no match for ‘operator=’ (operand types are ‘std::stringstream {aka std::__cxx11::basic_stringstream<char>}’ and ‘std::__cxx11::basic_stringstream<char>::__string_type {aka std::__cxx11::basic_string<char>}’)
+   ss = ss.str();
+      ^
+In file included from ../source/Client.h:14:0,
+                 from clientgui.h:6,
+                 from clientgui.cpp:1:
+/usr/include/c++/5/sstream:655:11: note: candidate: std::__cxx11::basic_stringstream<char>& std::__cxx11::basic_stringstream<char>::operator=(const std::__cxx11::basic_stringstream<char>&)
+     class basic_stringstream : public basic_iostream<_CharT, _Traits>
+           ^
+/usr/include/c++/5/sstream:655:11: note:   no known conversion for argument 1 from ‘std::__cxx11::basic_stringstream<char>::__string_type {aka std::__cxx11::basic_string<char>}’ to ‘const std::__cxx11::basic_stringstream<char>&’
+clientgui.cpp:54:71: error: invalid user-defined conversion from ‘std::stringstream {aka std::__cxx11::basic_stringstream<char>}’ to ‘int’ [-fpermissive]
+   ui.tableWidget_comptes->setItem(rowCount, 0, new QTableWidgetItem(ss));
+                                                                       ^
+In file included from /usr/include/c++/5/ios:44:0,
+                 from /usr/include/c++/5/ostream:38,
+                 from /usr/include/c++/5/iterator:64,
+                 from /usr/include/qt4/QtCore/qlist.h:50,
+                 from /usr/include/qt4/QtCore/qobject.h:50,
+                 from /usr/include/qt4/QtGui/qwidget.h:47,
+                 from /usr/include/qt4/QtGui/qmainwindow.h:45,
+                 from /usr/include/qt4/QtGui/QMainWindow:1,
+                 from clientgui.h:4,
+                 from clientgui.cpp:1:
+/usr/include/c++/5/bits/basic_ios.h:120:7: note: candidate is: std::basic_ios<_CharT, _Traits>::operator void*() const [with _CharT = char; _Traits = std::char_traits<char>] <near match>
+       operator void*() const
+       ^
+/usr/include/c++/5/bits/basic_ios.h:120:7: note:   no known conversion from ‘void*’ to ‘int’
+In file included from /usr/include/qt4/QtGui/QTableWidget:1:0,
+                 from ui_clientgui.h:21,
+                 from clientgui.h:5,
+                 from clientgui.cpp:1:
+/usr/include/qt4/QtGui/qtablewidget.h:88:5: note:   initializing argument 1 of ‘QTableWidgetItem::QTableWidgetItem(int)’
+     QTableWidgetItem(int type = Type);
+     ^
+Makefile.Debug:187 : la recette pour la cible « debug/clientgui.o » a échouée
+make[1] : on quitte le répertoire « /mnt/hgfs/shared/Cpp/tp4/ClientGUI »
+make[1]: *** [debug/clientgui.o] Erreur 1
+Makefile:50 : la recette pour la cible « debug » a échouée
+make: *** [debug] Erreur 2
+20:04:52 **** Incremental Build of configuration Debug for project source ****
+make all 
+make: rien à faire pour « all ».
+20:04:54 **** Incremental Build of configuration Debug for project Testeurs ****
+make all 
+make: rien à faire pour « all ».
+20:04:55 **** Incremental Build of project ClientGUI ****
+make debug 
+make -f Makefile.Debug
+make[1] : on entre dans le répertoire « /mnt/hgfs/shared/Cpp/tp4/ClientGUI »
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../source -Idebug -I. -o debug/clientgui.o clientgui.cpp
+clientgui.cpp: In member function ‘void ClientGUI::ajoutCheque(int, double, double, int, double, const string&)’:
+clientgui.cpp:54:70: error: no matching function for call to ‘QTableWidgetItem::QTableWidgetItem(std::__cxx11::string&)’
+   ui.tableWidget_comptes->setItem(rowCount, 0, new QTableWidgetItem(s));
+                                                                      ^
+In file included from /usr/include/qt4/QtGui/QTableWidget:1:0,
+                 from ui_clientgui.h:21,
+                 from clientgui.h:5,
+                 from clientgui.cpp:1:
+/usr/include/qt4/QtGui/qtablewidget.h:91:5: note: candidate: QTableWidgetItem::QTableWidgetItem(const QTableWidgetItem&)
+     QTableWidgetItem(const QTableWidgetItem &other);
+     ^
+/usr/include/qt4/QtGui/qtablewidget.h:91:5: note:   no known conversion for argument 1 from ‘std::__cxx11::string {aka std::__cxx11::basic_string<char>}’ to ‘const QTableWidgetItem&’
+/usr/include/qt4/QtGui/qtablewidget.h:90:14: note: candidate: QTableWidgetItem::QTableWidgetItem(const QIcon&, const QString&, int)
+     explicit QTableWidgetItem(const QIcon &icon, const QString &text, int type = Type);
+              ^
+/usr/include/qt4/QtGui/qtablewidget.h:90:14: note:   candidate expects 3 arguments, 1 provided
+/usr/include/qt4/QtGui/qtablewidget.h:89:14: note: candidate: QTableWidgetItem::QTableWidgetItem(const QString&, int)
+     explicit QTableWidgetItem(const QString &text, int type = Type);
+              ^
+/usr/include/qt4/QtGui/qtablewidget.h:89:14: note:   no known conversion for argument 1 from ‘std::__cxx11::string {aka std::__cxx11::basic_string<char>}’ to ‘const QString&’
+/usr/include/qt4/QtGui/qtablewidget.h:88:5: note: candidate: QTableWidgetItem::QTableWidgetItem(int)
+     QTableWidgetItem(int type = Type);
+     ^
+/usr/include/qt4/QtGui/qtablewidget.h:88:5: note:   no known conversion for argument 1 from ‘std::__cxx11::string {aka std::__cxx11::basic_string<char>}’ to ‘int’
+Makefile.Debug:187 : la recette pour la cible « debug/clientgui.o » a échouée
+make[1] : on quitte le répertoire « /mnt/hgfs/shared/Cpp/tp4/ClientGUI »
+make[1]: *** [debug/clientgui.o] Erreur 1
+make: *** [debug] Erreur 2
+Makefile:50 : la recette pour la cible « debug » a échouée
+20:07:26 **** Incremental Build of configuration Debug for project source ****
+make all 
+make: rien à faire pour « all ».
+20:07:28 **** Incremental Build of configuration Debug for project Testeurs ****
+make all 
+make: rien à faire pour « all ».
+20:07:29 **** Incremental Build of project ClientGUI ****
+make debug 
+make -f Makefile.Debug
+make[1] : on entre dans le répertoire « /mnt/hgfs/shared/Cpp/tp4/ClientGUI »
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../source -Idebug -I. -o debug/clientgui.o clientgui.cpp
+g++  -o ClientGUI debug/ajoutchequeinterface.o debug/main.o debug/clientgui.o debug/moc_ajoutchequeinterface.o debug/moc_clientgui.o    -L/usr/lib/i386-linux-gnu ../source/Debug/libsource.a -lQtGui -lQtCore -lpthread 
+{ test -n "" && DESTDIR="" || DESTDIR=.; } && test $(gdb --version | sed -e 's,[^0-9][^0-9]*\([0-9]\)\.\([0-9]\).*,\1\2,;q') -gt 72 && gdb --nx --batch --quiet -ex 'set confirm off' -ex "save gdb-index $DESTDIR" -ex quit 'ClientGUI' && test -f ClientGUI.gdb-index && objcopy --add-section '.gdb_index=ClientGUI.gdb-index' --set-section-flags '.gdb_index=readonly' 'ClientGUI' 'ClientGUI' && rm -f ClientGUI.gdb-index || true
+make[1] : on quitte le répertoire « /mnt/hgfs/shared/Cpp/tp4/ClientGUI »
+20:07:35 **** Incremental Build of configuration Debug for project source ****
+make all 
+make: rien à faire pour « all ».
+20:07:37 **** Incremental Build of project ClientGUI ****
+make debug 
+make -f Makefile.Debug
+make[1] : on entre dans le répertoire « /mnt/hgfs/shared/Cpp/tp4/ClientGUI »
+make[1]: rien à faire pour « first ».
+make[1] : on quitte le répertoire « /mnt/hgfs/shared/Cpp/tp4/ClientGUI »
+20:07:55 **** Incremental Build of configuration Debug for project source ****
+make all 
+make: rien à faire pour « all ».
+20:07:57 **** Incremental Build of project ClientGUI ****
+make debug 
+make -f Makefile.Debug
+make[1] : on entre dans le répertoire « /mnt/hgfs/shared/Cpp/tp4/ClientGUI »
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../source -Idebug -I. -o debug/clientgui.o clientgui.cpp
+g++  -o ClientGUI debug/ajoutchequeinterface.o debug/main.o debug/clientgui.o debug/moc_ajoutchequeinterface.o debug/moc_clientgui.o    -L/usr/lib/i386-linux-gnu ../source/Debug/libsource.a -lQtGui -lQtCore -lpthread 
+{ test -n "" && DESTDIR="" || DESTDIR=.; } && test $(gdb --version | sed -e 's,[^0-9][^0-9]*\([0-9]\)\.\([0-9]\).*,\1\2,;q') -gt 72 && gdb --nx --batch --quiet -ex 'set confirm off' -ex "save gdb-index $DESTDIR" -ex quit 'ClientGUI' && test -f ClientGUI.gdb-index && objcopy --add-section '.gdb_index=ClientGUI.gdb-index' --set-section-flags '.gdb_index=readonly' 'ClientGUI' 'ClientGUI' && rm -f ClientGUI.gdb-index || true
+make[1] : on quitte le répertoire « /mnt/hgfs/shared/Cpp/tp4/ClientGUI »
+20:10:26 **** Incremental Build of configuration Debug for project source ****
+make all 
+make: rien à faire pour « all ».
+20:10:28 **** Incremental Build of project ClientGUI ****
+make debug 
+make -f Makefile.Debug
+make[1] : on entre dans le répertoire « /mnt/hgfs/shared/Cpp/tp4/ClientGUI »
+/usr/lib/i386-linux-gnu/qt4/bin/uic clientgui.ui -o ui_clientgui.h
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../source -Idebug -I. -o debug/main.o main.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../source -Idebug -I. -o debug/clientgui.o clientgui.cpp
+/usr/lib/i386-linux-gnu/qt4/bin/moc -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../source -Idebug -I. clientgui.h -o debug/moc_clientgui.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../source -Idebug -I. -o debug/moc_clientgui.o debug/moc_clientgui.cpp
+g++  -o ClientGUI debug/ajoutchequeinterface.o debug/main.o debug/clientgui.o debug/moc_ajoutchequeinterface.o debug/moc_clientgui.o    -L/usr/lib/i386-linux-gnu ../source/Debug/libsource.a -lQtGui -lQtCore -lpthread 
+{ test -n "" && DESTDIR="" || DESTDIR=.; } && test $(gdb --version | sed -e 's,[^0-9][^0-9]*\([0-9]\)\.\([0-9]\).*,\1\2,;q') -gt 72 && gdb --nx --batch --quiet -ex 'set confirm off' -ex "save gdb-index $DESTDIR" -ex quit 'ClientGUI' && test -f ClientGUI.gdb-index && objcopy --add-section '.gdb_index=ClientGUI.gdb-index' --set-section-flags '.gdb_index=readonly' 'ClientGUI' 'ClientGUI' && rm -f ClientGUI.gdb-index || true
+make[1] : on quitte le répertoire « /mnt/hgfs/shared/Cpp/tp4/ClientGUI »
+17:19:03 **** Incremental Build of configuration Debug for project source ****
+make all 
+make: rien à faire pour « all ».
+17:19:11 **** Incremental Build of configuration Debug for project Testeurs ****
+make all 
+make: rien à faire pour « all ».
+17:19:12 **** Incremental Build of project ClientGUI ****
+make debug 
+make -f Makefile.Debug
+make[1] : on entre dans le répertoire « /mnt/hgfs/shared/Cpp/tp4/ClientGUI »
+make[1]: rien à faire pour « first ».
+make[1] : on quitte le répertoire « /mnt/hgfs/shared/Cpp/tp4/ClientGUI »

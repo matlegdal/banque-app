@@ -1,0 +1,29 @@
+#ifndef AJOUTCHEQUEINTERFACE_H
+#define AJOUTCHEQUEINTERFACE_H
+
+#include <QtGui/QDialog>
+#include "ui_ajoutchequeinterface.h"
+
+class AjoutChequeInterface: public QDialog
+{
+Q_OBJECT
+
+public:
+	AjoutChequeInterface(QWidget *parent = 0);
+	~AjoutChequeInterface();
+
+	int reqNoCompte();
+	double reqTauxInteret();
+	double solde();
+	int nombreTransactions();
+	double tauxInteretMinimum();
+
+
+public slots:
+	void validerEnregistrement();
+
+private:
+	Ui::AjoutChequeInterfaceClass ui;
+};
+
+#endif // AJOUTCHEQUEINTERFACE_H
