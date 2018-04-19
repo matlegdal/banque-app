@@ -63,13 +63,16 @@ public:
         spinBox_noCompte = new QSpinBox(ajoutepargneinterfaceClass);
         spinBox_noCompte->setObjectName(QString::fromUtf8("spinBox_noCompte"));
         spinBox_noCompte->setGeometry(QRect(250, 70, 131, 27));
+        spinBox_noCompte->setValue(1);
         doubleSpinBox_tauxInteret = new QDoubleSpinBox(ajoutepargneinterfaceClass);
         doubleSpinBox_tauxInteret->setObjectName(QString::fromUtf8("doubleSpinBox_tauxInteret"));
         doubleSpinBox_tauxInteret->setGeometry(QRect(250, 110, 131, 27));
+        doubleSpinBox_tauxInteret->setValue(1);
         doubleSpinBox_solde = new QDoubleSpinBox(ajoutepargneinterfaceClass);
         doubleSpinBox_solde->setObjectName(QString::fromUtf8("doubleSpinBox_solde"));
         doubleSpinBox_solde->setGeometry(QRect(250, 150, 131, 27));
         doubleSpinBox_solde->setMaximum(1e+06);
+        doubleSpinBox_solde->setValue(400);
         pushButton_ajoutEpargne = new QPushButton(ajoutepargneinterfaceClass);
         pushButton_ajoutEpargne->setObjectName(QString::fromUtf8("pushButton_ajoutEpargne"));
         pushButton_ajoutEpargne->setGeometry(QRect(110, 260, 171, 27));

@@ -48,7 +48,12 @@
     </column>
     <column>
      <property name="text">
-      <string>Taux d'interet minimum</string>
+      <string>Nb de transaction</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Taux minimum</string>
      </property>
     </column>
    </widget>

@@ -62,8 +62,8 @@ public:
         centralwidget = new QWidget(ClientGUIClass);
         centralwidget->setObjectName(QString::fromUtf8("centralwidget"));
         tableWidget_comptes = new QTableWidget(centralwidget);
-        if (tableWidget_comptes->columnCount() < 5)
-            tableWidget_comptes->setColumnCount(5);
+        if (tableWidget_comptes->columnCount() < 6)
+            tableWidget_comptes->setColumnCount(6);
         QTableWidgetItem *__qtablewidgetitem = new QTableWidgetItem();
         tableWidget_comptes->setHorizontalHeaderItem(0, __qtablewidgetitem);
         QTableWidgetItem *__qtablewidgetitem1 = new QTableWidgetItem();
@@ -74,6 +74,8 @@ public:
         tableWidget_comptes->setHorizontalHeaderItem(3, __qtablewidgetitem3);
         QTableWidgetItem *__qtablewidgetitem4 = new QTableWidgetItem();
         tableWidget_comptes->setHorizontalHeaderItem(4, __qtablewidgetitem4);
+        QTableWidgetItem *__qtablewidgetitem5 = new QTableWidgetItem();
+        tableWidget_comptes->setHorizontalHeaderItem(5, __qtablewidgetitem5);
         tableWidget_comptes->setObjectName(QString::fromUtf8("tableWidget_comptes"));
         tableWidget_comptes->setGeometry(QRect(20, 120, 761, 421));
         tableWidget_comptes->setEditTriggers(QAbstractItemView::NoEditTriggers);
@@ -127,7 +129,9 @@ public:
         QTableWidgetItem *___qtablewidgetitem3 = tableWidget_comptes->horizontalHeaderItem(3);
         ___qtablewidgetitem3->setText(QApplication::translate("ClientGUIClass", "Taux d'interet", 0, QApplication::UnicodeUTF8));
         QTableWidgetItem *___qtablewidgetitem4 = tableWidget_comptes->horizontalHeaderItem(4);
-        ___qtablewidgetitem4->setText(QApplication::translate("ClientGUIClass", "Taux d'interet minimum", 0, QApplication::UnicodeUTF8));
+        ___qtablewidgetitem4->setText(QApplication::translate("ClientGUIClass", "Nb de transaction", 0, QApplication::UnicodeUTF8));
+        QTableWidgetItem *___qtablewidgetitem5 = tableWidget_comptes->horizontalHeaderItem(5);
+        ___qtablewidgetitem5->setText(QApplication::translate("ClientGUIClass", "Taux minimum", 0, QApplication::UnicodeUTF8));
         menuFichier->setTitle(QApplication::translate("ClientGUIClass", "Fichier", 0, QApplication::UnicodeUTF8));
         menuActions->setTitle(QApplication::translate("ClientGUIClass", "Actions", 0, QApplication::UnicodeUTF8));
         menuAjouter_un_compte->setTitle(QApplication::translate("ClientGUIClass", "Ajouter un compte", 0, QApplication::UnicodeUTF8));
