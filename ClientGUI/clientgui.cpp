@@ -113,7 +113,7 @@ void ClientGUI::ajoutEpargne(int p_noCompte, double p_tauxInteret, double p_sold
 
 		ui.tableWidget_comptes->setItem(rowCount, 0,
 			new QTableWidgetItem(QString::number(p_noCompte)));
-		ui.tableWidget_comptes->setItem(rowCount, 1, new QTableWidgetItem("Cheque"));
+		ui.tableWidget_comptes->setItem(rowCount, 1, new QTableWidgetItem("Epargne"));
 		ui.tableWidget_comptes->setItem(rowCount, 2,
 			new QTableWidgetItem(QString::number(p_solde)));
 		ui.tableWidget_comptes->setItem(rowCount, 3,

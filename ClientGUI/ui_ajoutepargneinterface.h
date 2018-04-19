@@ -63,6 +63,7 @@ public:
         spinBox_noCompte = new QSpinBox(ajoutepargneinterfaceClass);
         spinBox_noCompte->setObjectName(QString::fromUtf8("spinBox_noCompte"));
         spinBox_noCompte->setGeometry(QRect(250, 70, 131, 27));
+        spinBox_noCompte->setMinimum(1);
         spinBox_noCompte->setValue(1);
         doubleSpinBox_tauxInteret = new QDoubleSpinBox(ajoutepargneinterfaceClass);
         doubleSpinBox_tauxInteret->setObjectName(QString::fromUtf8("doubleSpinBox_tauxInteret"));
