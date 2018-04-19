@@ -16,11 +16,13 @@ public:
 	void ajoutCheque(int p_noCompte, double p_tauxInteret, double p_solde, int p_nombreTransactions,
 		double p_tauxInteretMinimum, const std::string& p_description);
 	void supprimerCompte(int p_noCompte);
+	void ajoutEpargne(int p_noCompte, double p_tauxInteret, double p_solde,
+			const std::string& p_description);
 
 public slots:
 	void dialogAjoutCheque();
 	void dialogSupprimerCompte();
-
+	void dialogAjoutEpargne();
 private:
 	Ui::ClientGUIClass ui;
 	banque::Client client;

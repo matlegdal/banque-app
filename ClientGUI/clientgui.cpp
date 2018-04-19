@@ -6,6 +6,8 @@
 #include <qmessagebox.h>
 #include "Client.h"
 #include <iostream>
+#include "Epargne.h"
+#include "ajoutepargneinterface.h"
 
 ClientGUI::ClientGUI(QWidget *parent)
 	: QMainWindow(parent), client(1000, "Standard", "Client", "418 123-1234",
@@ -15,6 +17,8 @@ ClientGUI::ClientGUI(QWidget *parent)
 	QObject::connect(ui.actionCheque, SIGNAL(triggered()), this, SLOT(dialogAjoutCheque()));
 	QObject::connect(ui.actionSupprimer_un_compte, SIGNAL(triggered()), this,
 		SLOT(dialogSupprimerCompte()));
+	QObject::connect(ui.actionEpargne, SIGNAL(triggered()), this, SLOT(dialogAjoutEpargne()));
+	ui.textBrowser_infoClient->setText(client.reqClientFormate().c_str());
 	ui.textBrowser_infoClient->setText(client.reqClientFormate().c_str());
 }
 
@@ -101,5 +105,43 @@ void ClientGUI::supprimerCompte(int p_noCompte)
 	{
 		std::string message = e.what();
 		std::cout << message << std::endl;
+	}
+}
+
+void ClientGUI::dialogAjoutEpargne()
+{
+	ajoutepargneinterface saisieEpargne(this);
+	if (saisieEpargne.exec())
+	{
+		std::string description = saisieEpargne.reqDescription().toStdString();
+		if (description.empty())
+		{
+			description = "Epargne";
+		}
+		ajoutEpargne(saisieEpargne.reqNoCompte(), saisieEpargne.reqTauxInteret(),
+			saisieEpargne.reqSolde(),description);
+	}
+}
+
+void ClientGUI::ajoutEpargne(int p_noCompte, double p_tauxInteret, double p_solde,
+	const std::string& p_description)
+{
+	try
+	{
+		banque::Epargne compteEpargne(p_noCompte, p_tauxInteret, p_solde,
+			p_description);
+		client.ajouterCompte(compteEpargne);
+
+		int rowCount = ui.tableWidget_comptes->rowCount();
+		ui.tableWidget_comptes->setRowCount(rowCount + 1);
+
+		QString s = QString::number(compteEpargne.reqNoCompte());
+		ui.tableWidget_comptes->setItem(rowCount, 0, new QTableWidgetItem(s));
+		ui.tableWidget_comptes->setItem(rowCount, 1, new QTableWidgetItem("Epargne"));
+
+	} catch (banque::CompteDejaPresentException e)
+	{
+		QString message = e.what();
+		QMessageBox::warning(this, "Erreur le compte suivant est deja present", message);
 	}
 }
