@@ -80,7 +80,7 @@ void ClientGUI::supprimerCompte(int p_noCompte)
 		QString s = QString::number(p_noCompte);
 		int rows = ui.tableWidget_comptes->rowCount();
 		bool found = false;
-		for (int i = 0; !found || i < rows; ++i)
+		for (int i = 0; !found && i < rows; ++i)
 		{
 			if (ui.tableWidget_comptes->item(i, 0)->text() == s)
 			{
