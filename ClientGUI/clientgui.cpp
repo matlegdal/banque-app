@@ -64,7 +64,7 @@ void ClientGUI::ajoutCheque(int p_noCompte, double p_tauxInteret, double p_solde
 		ui.tableWidget_comptes->setItem(rowCount, 0, new QTableWidgetItem(s));
 		ui.tableWidget_comptes->setItem(rowCount, 1, new QTableWidgetItem("Cheque"));
 
-	} catch (banque::CompteDejaPresentException e)
+	} catch (banque::CompteDejaPresentException &e)
 	{
 		QString message = e.what();
 		QMessageBox::warning(this, "Erreur le compte suivant est deja present", message);
@@ -73,13 +73,29 @@ void ClientGUI::ajoutCheque(int p_noCompte, double p_tauxInteret, double p_solde
 
 void ClientGUI::supprimerCompte(int p_noCompte)
 {
-try
-{
-	client.supprimerCompte(p_noCompte);
-	std::cout << client.reqReleves() << std::endl;
-} catch(banque::CompteAbsentException e)
-{
-	QString message = e.what();
-	QMessageBox::warning(this, "Erreur le compte est absent", message);
-}
+	try
+	{
+		client.supprimerCompte(p_noCompte);
+
+		QString s = QString::number(p_noCompte);
+		int rows = ui.tableWidget_comptes->rowCount();
+		bool found = false;
+		for (int i = 0; !found || i < rows; ++i)
+		{
+			if (ui.tableWidget_comptes->item(i, 0)->text() == s)
+			{
+				ui.tableWidget_comptes->removeRow(i);
+				found = true;
+			}
+		}
+
+	} catch (banque::CompteAbsentException &e)
+	{
+		QString message = e.what();
+		QMessageBox::warning(this, "Erreur le compte est absent", message);
+	} catch(std::runtime_error &e)
+	{
+		std::string message = e.what();
+		std::cout << message << std::endl;
+	}
 }
