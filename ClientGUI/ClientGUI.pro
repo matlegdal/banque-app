@@ -2,14 +2,17 @@ TEMPLATE = app
 TARGET = ClientGUI
 QT += core \
     gui
-HEADERS += supprimercompteinterface.h \
+HEADERS += ajoutepargneinterface.h \
+    supprimercompteinterface.h \
     ajoutchequeinterface.h \
     clientgui.h
-SOURCES += supprimercompteinterface.cpp \
+SOURCES += ajoutepargneinterface.cpp \
+    supprimercompteinterface.cpp \
     ajoutchequeinterface.cpp \
     main.cpp \
     clientgui.cpp
-FORMS += supprimercompteinterface.ui \
+FORMS += ajoutepargneinterface.ui \
+    supprimercompteinterface.ui \
     ajoutchequeinterface.ui \
     clientgui.ui
 RESOURCES += 
