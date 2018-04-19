@@ -1,5 +1,6 @@
 #include "clientgui.h"
 #include "ajoutchequeinterface.h"
+#include "supprimercompteinterface.h"
 #include "Cheque.h"
 #include "CompteException.h"
 #include <qmessagebox.h>
@@ -12,6 +13,8 @@ ClientGUI::ClientGUI(QWidget *parent)
 {
 	ui.setupUi(this);
 	QObject::connect(ui.actionCheque, SIGNAL(triggered()), this, SLOT(dialogAjoutCheque()));
+	QObject::connect(ui.actionSupprimer_un_compte, SIGNAL(triggered()), this,
+		SLOT(dialogSupprimerCompte()));
 	ui.textBrowser_infoClient->setText(client.reqClientFormate().c_str());
 }
 
@@ -36,6 +39,15 @@ void ClientGUI::dialogAjoutCheque()
 	}
 }
 
+void ClientGUI::dialogSupprimerCompte()
+{
+	SupprimerCompteInterface saisieSuppression(this);
+	if (saisieSuppression.exec())
+	{
+		supprimerCompte(saisieSuppression.reqNoCompte());
+	}
+}
+
 void ClientGUI::ajoutCheque(int p_noCompte, double p_tauxInteret, double p_solde,
 	int p_nombreTransactions, double p_tauxInteretMinimum, const std::string& p_description)
 {
@@ -57,4 +69,17 @@ void ClientGUI::ajoutCheque(int p_noCompte, double p_tauxInteret, double p_solde
 		QString message = e.what();
 		QMessageBox::warning(this, "Erreur le compte suivant est deja present", message);
 	}
+}
+
+void ClientGUI::supprimerCompte(int p_noCompte)
+{
+try
+{
+	client.supprimerCompte(p_noCompte);
+	std::cout << client.reqReleves() << std::endl;
+} catch(banque::CompteAbsentException e)
+{
+	QString message = e.what();
+	QMessageBox::warning(this, "Erreur le compte est absent", message);
+}
 }
