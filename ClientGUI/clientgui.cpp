@@ -96,7 +96,7 @@ void ClientGUI::ajoutCheque(int p_noCompte, double p_tauxInteret, double p_solde
 	} catch (banque::CompteDejaPresentException &e)
 	{
 		QString message = e.what();
-		QMessageBox::warning(this, "Erreur le compte suivant est deja present", message);
+		QMessageBox::warning(this, "#Compte : erreur","Le # de compte existe sur un autre compte!");
 	}
 }
 
@@ -122,7 +122,7 @@ void ClientGUI::ajoutEpargne(int p_noCompte, double p_tauxInteret, double p_sold
 	} catch (banque::CompteDejaPresentException e)
 	{
 		QString message = e.what();
-		QMessageBox::warning(this, "Erreur le compte suivant est deja present", message);
+		QMessageBox::warning(this, "#Compte : erreur","Le # de compte existe sur un autre compte!");
 	}
 }
 
