@@ -60,9 +60,13 @@ void ClientGUI::ajoutCheque(int p_noCompte, double p_tauxInteret, double p_solde
 		int rowCount = ui.tableWidget_comptes->rowCount();
 		ui.tableWidget_comptes->setRowCount(rowCount + 1);
 
-		QString s = QString::number(compteCheque.reqNoCompte());
-		ui.tableWidget_comptes->setItem(rowCount, 0, new QTableWidgetItem(s));
+		ui.tableWidget_comptes->setItem(rowCount, 0,
+			new QTableWidgetItem(QString::number(compteCheque.reqNoCompte())));
 		ui.tableWidget_comptes->setItem(rowCount, 1, new QTableWidgetItem("Cheque"));
+		ui.tableWidget_comptes->setItem(rowCount, 2,
+			new QTableWidgetItem(QString::number(compteCheque.reqSolde())));
+		ui.tableWidget_comptes->setItem(rowCount, 3,
+					new QTableWidgetItem(QString::number(compteCheque.reqTauxInteret())));
 
 	} catch (banque::CompteDejaPresentException &e)
 	{
@@ -93,7 +97,7 @@ void ClientGUI::supprimerCompte(int p_noCompte)
 	{
 		QString message = e.what();
 		QMessageBox::warning(this, "Erreur le compte est absent", message);
-	} catch(std::runtime_error &e)
+	} catch (std::runtime_error &e)
 	{
 		std::string message = e.what();
 		std::cout << message << std::endl;

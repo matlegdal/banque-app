@@ -19,7 +19,7 @@
      <rect>
       <x>20</x>
       <y>120</y>
-      <width>361</width>
+      <width>761</width>
       <height>421</height>
      </rect>
     </property>
@@ -36,16 +36,21 @@
       <string>Type de compte</string>
      </property>
     </column>
-   </widget>
-   <widget class="QTextBrowser" name="textBrowser_infoComptes">
-    <property name="geometry">
-     <rect>
-      <x>420</x>
-      <y>120</y>
-      <width>361</width>
-      <height>421</height>
-     </rect>
-    </property>
+    <column>
+     <property name="text">
+      <string>Solde</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Taux d'interet</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Taux d'interet minimum</string>
+     </property>
+    </column>
    </widget>
    <widget class="QTextBrowser" name="textBrowser_infoClient">
     <property name="geometry">
